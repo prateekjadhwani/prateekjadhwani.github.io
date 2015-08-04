@@ -1,6 +1,0 @@
-= Hello World
-
-You guys must be wondering what happened to my old site. Well, I got tired of all the maintainence work that I had to do every now and then. And all the money that I was spending on just a 100MB space. Plus, this way I can concentrate more on what I love to do, i.e. code.
-
-I am pretty sure I wont be importing any of the posts from by old blog site. Sorry about that. Too much of an effort for old technologies!!
-
