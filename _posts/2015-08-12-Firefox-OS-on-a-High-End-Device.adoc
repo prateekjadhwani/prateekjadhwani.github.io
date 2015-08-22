@@ -66,3 +66,5 @@ Outcome
 The final outcome is a High End Device runnning Firefox OS.
 
 video::EyGAyjMobb8[youtube]
+
+There are definitely a lot of things that can be done to improve the OS even more. But right now, it is smoother than the one running on GeeksPhone Revolution or Peak.
