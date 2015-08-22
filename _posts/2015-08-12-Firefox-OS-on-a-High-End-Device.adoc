@@ -8,16 +8,16 @@ It all started with one tweet!!
 +++<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">My Phone Runs on JavaScript - great Firefox OS intro deck from <a href="https://twitter.com/jedireza">@jedireza</a> <a href="http://t.co/JksO42aP2B">http://t.co/JksO42aP2B</a></p>&mdash; dietrich ayala (@dietrich) <a href="https://twitter.com/dietrich/status/628270494190542849">August 3, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>+++
 
-Here you can clearly see from the slides that Firefos OS runs on Sony Xperia Z3 Compact phone. And so the experiment began!!
+Here you can clearly see from the slides that Firefos OS runs on Sony Xperia Z3 Compact. And so the experiment began!!
 
 
-Day 1 : Unlocking the bootloader
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-For someone who has never created android mods, or played with android, it was really difficult to understand what steps had to be followed in order to install Firefox OS. And so the first step _Unlocking The Bootloader_ turned out to be more challenging. But in the end, the bootloader was unlocked, and I played around with some of the bootloader options.
+Unlocking the bootloader
+^^^^^^^^^^^^^^^^^^^^^^^^
+For someone who has never created android mods, or played with android, it was really difficult to understand the steps that had to be followed in order to install Firefox OS. And so the first step _Unlocking The Bootloader_ turned out to be more challenging than I had originally thought. But in the end, the bootloader was unlocked, and I got to play with some of the bootloader options.
 
 
-Day 2 : Building for aries-l
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Building for aries-l
+^^^^^^^^^^^^^^^^^^^^
 
 Now that the bootloader was unlocked, I decided to install firefox os on this device which had Android 5.1.1 or you can say the most updated version of Android. 
 
@@ -27,15 +27,14 @@ ____
 
 After following the MDN docs on firefox OS for aries-l build, I started the build process on my mac. But after downloading the files, the build process failed. After talking to the community, I found out that the build process for Android 5.0+ was broken. Not only that, the build process doesnt work on Mac.
 
-Day 3 : Flashing the phone with 4.4
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Flashing the phone with 4.4
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 After realizing that the previous step was a total failure and talking to the people in community, I flashed the devices with Android 4.4.
 
 
-
-Day 4 : Building for aries
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Building for aries
+^^^^^^^^^^^^^^^^^^
 
 This time instead of using a Mac to build Firefox OS, I used a linux machine. ___(incase you are wondering why I did not use a virtual machine, well I did, but the process kept on failing after pulling the files from the device)___
 
