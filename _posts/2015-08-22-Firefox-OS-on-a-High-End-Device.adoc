@@ -1,6 +1,7 @@
 Firefox OS on a High End Device
 ===============================
 
+:published_at: 2015-08-22
 :hp-tags: Firefox OS, B2G, Sony Xperia Z3 Compact
 
 It all started with one tweet!! 
