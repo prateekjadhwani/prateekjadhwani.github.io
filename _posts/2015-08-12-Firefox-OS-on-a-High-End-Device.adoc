@@ -1,7 +1,7 @@
 Firefox OS on a High End Device
 ===============================
 
-It all started with one link:https://twitter.com/dietrich/status/628270494190542849[tweet]!! 
+It all started with one tweet!! 
 
 +++<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">My Phone Runs on JavaScript - great Firefox OS intro deck from <a href="https://twitter.com/jedireza">@jedireza</a> <a href="http://t.co/JksO42aP2B">http://t.co/JksO42aP2B</a></p>&mdash; dietrich ayala (@dietrich) <a href="https://twitter.com/dietrich/status/628270494190542849">August 3, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>+++
