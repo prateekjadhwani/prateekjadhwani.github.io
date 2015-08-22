@@ -36,7 +36,7 @@ After realizing that the previous step was a total failure and talking to the pe
 Building for aries
 ^^^^^^^^^^^^^^^^^^
 
-This time instead of using a Mac to build Firefox OS, I used a linux machine. ___(incase you are wondering why I did not use a virtual machine, well I did, but the process kept on failing after pulling the files from the device)___
+This time instead of using a Mac to build Firefox OS, I used a linux machine. ___(incase you are wondering why I did not use a virtual machine, well I did, but the process kept on failing after pulling the files from the device.)___
 
 ____
 aries is the code name for Sony Xperia Z3 Compact device running Android 4.4.
@@ -62,8 +62,6 @@ And this time, it was a success. I was finally able to see the device running Fi
 Outcome
 ^^^^^^^
 
-The final outcome is a High End Device runnning Firefox OS.
+The final outcome was a High End Device runnning Firefox OS.
 
 video::EyGAyjMobb8[youtube]
-
-There are definitely a lot of things that can be done to improve the OS even more. But right now, it is smoother than the one running on GeeksPhone Revolution or Peak.
