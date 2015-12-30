@@ -15,3 +15,17 @@ For example: to use the link:http://mojs.io/tutorials/easing/path-easing/[Path E
 * Property change code for a DOM element.
 
 Ofcourse this is the tl;dr version, so I am omitting a lot of optional parameters, but if you want you can look for more details link:http://mojs.io/tutorials/easing/path-easing/[here].
+
+== Demo
+Now that the basics of how to use this library is clear, I can finally show what the demo looks like.
+
+// image file here
+
+The working demo can be accessed from this link:http://codepen.io/prateekjadhwani/full/rxMmpe/[codepen demo]. All you need is a touchscreen.
+
+Or you can see the demo below:
+
+++++
+<p data-height="450" data-theme-id="3991" data-slug-hash="rxMmpe" data-default-tab="result" data-user="prateekjadhwani" class='codepen'>See the Pen <a href='http://codepen.io/prateekjadhwani/pen/rxMmpe/'>Elastic Menu</a> by Prateek Jadhwani (<a href='http://codepen.io/prateekjadhwani'>@prateekjadhwani</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
