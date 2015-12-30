@@ -1,0 +1,17 @@
+= Demo for mo.js Library
+:hp-tags: mo.js, demo, elastic menu
+
+
+== What is mo.js Library
+I like to call mo.js a motion/animation library since I have only seen its use in creating animations or motion based UI. More details about the library can be found at link:http://mojs.io/[mo.js Website].
+
+== How to use this library (tl;dr version)
+This library is pretty simple to use.
+
+For example: to use the link:http://mojs.io/tutorials/easing/path-easing/[Path Easing] functionality, you just need to provide the following details:
+
+* A path easing graph, usually in the form of a svg
+* Animation time
+* Property change code for a DOM element.
+
+Ofcourse this is the tl;dr version, so I am omitting a lot of optional parameters, but if you want you can look for more details link:http://mojs.io/tutorials/easing/path-easing/[here].
