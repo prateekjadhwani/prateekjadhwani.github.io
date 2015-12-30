@@ -14,7 +14,7 @@ For example: to use the link:http://mojs.io/tutorials/easing/path-easing/[Path E
 * Animation time
 * Property change code for a DOM element.
 
-Ofcourse this is the *tl;dr version*, so I am omitting a lot of optional parameters, but if you want, you can look for more details link:http://mojs.io/tutorials/easing/path-easing/[here].
+Of course this is the *tl;dr version*, so I am omitting a lot of optional parameters, but if you want, you can look for more details link:http://mojs.io/tutorials/easing/path-easing/[here].
 
 == Demo
 Now that the basics of how to use this library is clear, I can finally show what the demo looks like.
@@ -30,11 +30,11 @@ Or you can see the demo below:
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 ++++
 
-=== So what is hapenning in the demo?
+=== So what is happening in the demo?
 
-In the demo, I am just manipulating a SVG path. The touch start input decides the y-coordinate of the stretch, and touch drag computations decide the x-coordinate of the stretch. Once these coordinates have been calulated, SVG gets rendered on the screen.
+In the demo, I am just manipulating a SVG path. The touch start input decides the y-coordinate of the stretch, and touch drag computations decide the x-coordinate of the stretch. Once these coordinates have been calculated, SVG gets rendered on the screen.
 
-When the touch is released, the animation functions (_close menu_ or _open menu_) kicks in, which then uses *mo.js* path easing functionality to perform the wooble animation.
+When the touch is released, the animation functions (_close menu_ or _open menu_) kicks in, which then uses *mo.js* path easing functionality to perform the wobble animation.
 
 === References
 I used the following references to understand the pre-requisites and implement this demo:
