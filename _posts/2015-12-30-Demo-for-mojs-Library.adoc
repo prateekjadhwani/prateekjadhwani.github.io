@@ -5,16 +5,16 @@
 == What is mo.js Library
 I like to call mo.js a motion/animation library since I have only seen its use in creating animations or motion based UI. More details about the library can be found at link:http://mojs.io/[mo.js Website].
 
-== How to use this library (tl;dr version)
+== How to use this library (_tl;dr version_)
 This library is pretty simple to use.
 
 For example: to use the link:http://mojs.io/tutorials/easing/path-easing/[Path Easing] functionality, you just need to provide the following details:
 
-* A path easing graph, usually in the form of a svg
+* A path easing graph, _usually in the form of a svg_
 * Animation time
 * Property change code for a DOM element.
 
-Ofcourse this is the tl;dr version, so I am omitting a lot of optional parameters, but if you want you can look for more details link:http://mojs.io/tutorials/easing/path-easing/[here].
+Ofcourse this is the *tl;dr version*, so I am omitting a lot of optional parameters, but if you want, you can look for more details link:http://mojs.io/tutorials/easing/path-easing/[here].
 
 == Demo
 Now that the basics of how to use this library is clear, I can finally show what the demo looks like.
@@ -25,13 +25,22 @@ The working demo can be accessed from this link:http://codepen.io/prateekjadhwan
 
 Or you can see the demo below:
 
-
+++++
 <p data-height="450" data-theme-id="3991" data-slug-hash="rxMmpe" data-default-tab="result" data-user="prateekjadhwani" class='codepen'>See the Pen <a href='http://codepen.io/prateekjadhwani/pen/rxMmpe/'>Elastic Menu</a> by Prateek Jadhwani (<a href='http://codepen.io/prateekjadhwani'>@prateekjadhwani</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
 
-*So what is hapenning in the demo?*
+=== So what is hapenning in the demo?
 
-In the demo, you can see th
+In the demo, I am just manipulating a SVG path. The touch start input decides the y-coordinate of the stretch, and touch drag computations decide the x-coordinate of the stretch. Once these coordinates have been calulated, SVG gets rendered on the screen.
 
+When the touch is released, the animation functions (_close menu_ or _open menu_) kicks in, which then uses *mo.js* path easing functionality to perform the wooble animation.
 
+=== References
+I used the following references to understand the pre-requisites and implement this demo:
 
+* https://dribbble.com/shots/1949368-Sidebar-animation
+* http://jxnblk.com/paths/
+* http://svg.dabbles.info/
+* https://github.com/Thomaseustache/swipe-menu-svg
+* http://mojs.io/tutorials/easing/path-easing/
