@@ -16,10 +16,11 @@ For example: to use the link:http://mojs.io/tutorials/easing/path-easing/[Path E
 
 Of course this is the *tl;dr version*, so I am omitting a lot of optional parameters, but if you want, you can look for more details link:http://mojs.io/tutorials/easing/path-easing/[here].
 
+
 == Demo
 Now that the basics of how to use this library is clear, I can finally show what the demo looks like.
 
-// image file here
+image::elastic_menu.gif[demo, 300, 200, https://github.com/prateekjadhwani/prateekjadhwani.github.io/blob/master/images/elastic_menu.gif?raw=true, align="center"]
 
 The working demo can be accessed from this link:http://codepen.io/prateekjadhwani/full/rxMmpe/[codepen demo]. All you need is a touchscreen.
 
