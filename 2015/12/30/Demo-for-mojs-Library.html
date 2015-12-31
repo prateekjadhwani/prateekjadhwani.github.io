@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Demo for mo.js Library</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//prateekjadhwani.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//prateekjadhwani.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://prateekjadhwani.github.io/2015/12/30/Demo-for-mojs-Library.html" />
+    
+    <meta property="og:site_name" content="Prateek Jadhwani" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Demo for mo.js Library" />
+    <meta property="og:description" content="What is mo.js Library I like to call mo.js a motion/animation library since I have only seen its use in creating animations or motion based UI. More details about the library can be found at mo.js..." />
+    <meta property="og:url" content="https://prateekjadhwani.github.io/2015/12/30/Demo-for-mojs-Library.html" />
+    <meta property="article:published_time" content="2015-12-30T05:00:00.000Z" />
+    <meta property="article:modified_time" content="2015-12-31T02:53:45.035Z" />
+    <meta property="article:tag" content="mo.js" />
+    <meta property="article:tag" content="demo" />
+    <meta property="article:tag" content="elastic menu" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Demo for mo.js Library" />
+    <meta name="twitter:description" content="What is mo.js Library I like to call mo.js a motion/animation library since I have only seen its use in creating animations or motion based UI. More details about the library can be found at mo.js..." />
+    <meta name="twitter:url" content="https://prateekjadhwani.github.io/2015/12/30/Demo-for-mojs-Library.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Prateek Jadhwani",
+    "author": {
+        "@type": "Person",
+        "name": "Prateek Jadhwani",
+        "image": "https://avatars.githubusercontent.com/u/2219900?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "https://prateekjadhwani.github.io"
+    },
+    "headline": "Demo for mo.js Library",
+    "url": "https://prateekjadhwani.github.io/2015/12/30/Demo-for-mojs-Library.html",
+    "datePublished": "2015-12-30T05:00:00.000Z",
+    "dateModified": "2015-12-31T02:53:45.035Z",
+    "keywords": "mo.js,  demo,  elastic menu",
+    "description": "What is mo.js Library I like to call mo.js a motion/animation library since I have only seen its use in creating animations or motion based UI. More details about the library can be found at mo.js..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Prateek Jadhwani" href="https://prateekjadhwani.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-mojs tag-demo tag-elastic-menu">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://prateekjadhwani.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://prateekjadhwani.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-mojs tag-demo tag-elastic-menu">
+
+        <header class="post-header">
+            <h1 class="post-title">Demo for mo.js Library</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-12-30">30 December 2015</time>  on <a href="https://prateekjadhwani.github.io/tag/mojs">mo.js</a>, <a href="https://prateekjadhwani.github.io/tag/demo"> demo</a>, <a href="https://prateekjadhwani.github.io/tag/elastic-menu"> elastic menu</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="sect1">
+<h2 id="_what_is_mo_js_library">What is mo.js Library</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I like to call mo.js a motion/animation library since I have only seen its use in creating animations or motion based UI. More details about the library can be found at <a href="http://mojs.io/">mo.js Website</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_to_use_this_library_em_tl_dr_version_em">How to use this library (<em>tl;dr version</em>)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This library is pretty simple to use.</p>
+</div>
+<div class="paragraph">
+<p>For example: to use the <a href="http://mojs.io/tutorials/easing/path-easing/">Path Easing</a> functionality, you just need to provide the following details:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A path easing graph, <em>usually in the form of a svg</em></p>
+</li>
+<li>
+<p>Animation time</p>
+</li>
+<li>
+<p>Property change code for a DOM element.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Of course this is the <strong>tl;dr version</strong>, so I am omitting a lot of optional parameters, but if you want, you can look for more details <a href="http://mojs.io/tutorials/easing/path-easing/">here</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_demo">Demo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Now that the basics of how to use this library is clear, I can finally show what the demo looks like.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="/images/elastic_menu.gif" alt="demo" width="300" height="200">
+</div>
+</div>
+<div class="paragraph">
+<p>The working demo can be accessed from this <a href="http://codepen.io/prateekjadhwani/full/rxMmpe/">codepen demo</a>. All you need is a touchscreen.</p>
+</div>
+<div class="paragraph">
+<p>Or you can see the demo below:</p>
+</div>
+<p data-height="450" data-theme-id="3991" data-slug-hash="rxMmpe" data-default-tab="result" data-user="prateekjadhwani" class='codepen'>See the Pen <a href='http://codepen.io/prateekjadhwani/pen/rxMmpe/'>Elastic Menu</a> by Prateek Jadhwani (<a href='http://codepen.io/prateekjadhwani'>@prateekjadhwani</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<div class="sect2">
+<h3 id="_so_what_is_happening_in_the_demo">So what is happening in the demo?</h3>
+<div class="paragraph">
+<p>In the demo, I am just manipulating a SVG path. The touch start input decides the y-coordinate of the stretch, and touch drag computations decide the x-coordinate of the stretch. Once these coordinates have been calculated, SVG gets rendered on the screen.</p>
+</div>
+<div class="paragraph">
+<p>When the touch is released, the animation functions (<em>close menu</em> or <em>open menu</em>) kicks in, which then uses <strong>mo.js</strong> path easing functionality to perform the wobble animation.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_references">References</h3>
+<div class="paragraph">
+<p>I used the following references to understand the pre-requisites and implement this demo:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://dribbble.com/shots/1949368-Sidebar-animation" class="bare">https://dribbble.com/shots/1949368-Sidebar-animation</a></p>
+</li>
+<li>
+<p><a href="http://jxnblk.com/paths/" class="bare">http://jxnblk.com/paths/</a></p>
+</li>
+<li>
+<p><a href="http://svg.dabbles.info/" class="bare">http://svg.dabbles.info/</a></p>
+</li>
+<li>
+<p><a href="https://github.com/Thomaseustache/swipe-menu-svg" class="bare">https://github.com/Thomaseustache/swipe-menu-svg</a></p>
+</li>
+<li>
+<p><a href="http://mojs.io/tutorials/easing/path-easing/" class="bare">http://mojs.io/tutorials/easing/path-easing/</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/2219900?v=3)"><span class="hidden">Prateek Jadhwani's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">Prateek Jadhwani</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">United States</span>
+                    <span class="author-link icon-link"><a href="https://prateekjadhwani.github.io">https://prateekjadhwani.github.io</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Demo%20for%20mo.js%20Library&amp;url=https://prateekjadhwani.github.io/2015/12/30/Demo-for-mojs-Library.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://prateekjadhwani.github.io/2015/12/30/Demo-for-mojs-Library.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://prateekjadhwani.github.io/2015/12/30/Demo-for-mojs-Library.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'prateekjadhwani'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://prateekjadhwani.github.io">Prateek Jadhwani</a> &copy; 2015</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//prateekjadhwani.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//prateekjadhwani.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+</body>
+</html>
