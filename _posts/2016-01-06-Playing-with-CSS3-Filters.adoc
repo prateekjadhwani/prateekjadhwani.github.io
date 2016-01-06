@@ -5,7 +5,7 @@ Just wanted to see what happens when blur and contrast filters fight with each o
 
 
 ++++
-<p data-height="594" data-theme-id="3991" data-slug-hash="eJvjOq" data-default-tab="result" data-user="prateekjadhwani" class='codepen'>See the Pen <a href='http://codepen.io/prateekjadhwani/pen/eJvjOq/'>Gooey CSS3 Checkbox</a> by Prateek Jadhwani (<a href='http://codepen.io/prateekjadhwani'>@prateekjadhwani</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="293" data-theme-id="3991" data-slug-hash="eJvjOq" data-default-tab="result" data-user="prateekjadhwani" class='codepen'>See the Pen <a href='http://codepen.io/prateekjadhwani/pen/eJvjOq/'>Gooey CSS3 Checkbox</a> by Prateek Jadhwani (<a href='http://codepen.io/prateekjadhwani'>@prateekjadhwani</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 ++++
 
