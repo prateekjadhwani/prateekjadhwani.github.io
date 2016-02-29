@@ -1,0 +1,28 @@
+= Creating Complex CSS3 Animations
+:hp-tags: css3, svg2css, animation
+
+Recently, I wanted to create a css3 demo to show flickering of light and after trying it for a couple of times, I was able to build something recognizable. To be honest, it was crap.
+
+
+== Problem Statement
+
+Thinking about keyframes and writing down the values of every keyframe is not something human mind can do. This is just too complex. Just imagine, how would you write css keyframes for an animation if you need to manipulated 3-4 properties for a div. Not possible at all, right? In order to achieve this, I had to go with something that doesnt involve human computation at all. Something that can be computed by a computer. Yup, you are right, I am talking about JavaScript.
+
+== Prospective Solution
+
+I instantly fell in love with the library mo.js. It does everything what I want.. I just need to tell it what type of animation I want, and it will animate the element. Simple as that. Legomushroom did an amazing job of creating something so beautiful.
+
+We all know the problem with using a JS library in a project. UPGRADING THE LIBRARY!!! I have always found it difficult to upgrade the libraries when my project is targeting millions of users. What if the browser that I want to be supported is not being supported by the user? What if a feature that I am using is being depreciated by the library? So many What Ifs!!
+
+== Permanent Solution
+
+I came up with a solution that could let users create keyframes based on the same concept that mo.js uses, but instead of creating those keyframes on runtime and performing animations on the fly, the keyframes are generated on a webapp and can be downloaded as css files that can be included in the project.
+
+This exporting of css animation keyframes makes a project independent of any library. Not only that, you can export the files to gist.github.com which can be shared with anyone. All that a user needs to do is, create the div, and add animation SVG paths and their properties.
+
+Here are some outputs of the demos I added in the project
+
+image::svg2css-tublightoutput.gif[demo1, https://raw.githubusercontent.com/prateekjadhwani/svg2css/master/assets/svg2css-tublightoutput.gif, align="center"]
+
+image::svg2css-leftrefresh.gif[demo2, https://github.com/prateekjadhwani/svg2css/raw/master/assets/svg2css-leftrefresh.gif, align="center"]
+
