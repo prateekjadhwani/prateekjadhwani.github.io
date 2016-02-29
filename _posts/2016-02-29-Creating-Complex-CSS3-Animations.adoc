@@ -6,13 +6,13 @@ Recently, I wanted to create a css3 demo to show flickering of light and after t
 
 == Problem Statement
 
-Thinking about keyframes and writing down the values of every keyframe is not something human mind can do. This is just too complex. Just imagine, how would you write css keyframes for an animation if you need to manipulated 3-4 properties for a div. Not possible at all, right? In order to achieve this, I had to go with something that doesnt involve human computation at all. Something that can be computed by a computer. Yup, you are right, I am talking about JavaScript.
+Thinking about keyframes and writing down the values of every keyframe is not something human mind can do. This is just too complex. Just imagine, how would you write css keyframes for an animation if you need to manipulated 3-4 properties for a div. Not possible at all, right? In order to achieve this, I had to go with something that doesn't involve human computation at all. Something that can be computed by a computer. Yup, you are right, I am talking about JavaScript.
 
 === Temporary Solution
 
 I instantly fell in love with the library link:http://mojs.io/[mo.js]. It does everything what I want. I just had to tell it what type of animation I want, and it made the element animate as per that instruction. Simple as that. link:https://github.com/legomushroom[Legomushroom] did an amazing job of creating something so beautiful.
 
-We all know the problem with using a JS library in a project. *UPGRADING THE LIBRARY!!!* I have always found it difficult to upgrade the libraries when my project is targeting millions of users. What if the browser that I want to support is not being supported by the library any more? What if a feature that I am using is being depreciated by the library? So many _What Ifs_!!
+But we all know the problem with using a JS library in a project. *UPGRADING THE LIBRARY!!!* I have always found it difficult to upgrade the libraries when my project is targeting millions of users. What if the browser that I want to support is not being supported by the library any more? What if a feature that I am using is being depreciated by the library? So many _What Ifs_!!
 
 === Permanent Solution
 
@@ -44,4 +44,4 @@ In all, I was able to create really complex animations including the ones involv
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 +++
 
-Feel free to reach out to me if you find any bugs are if you face any problems with the tutorials.
+If you still find it difficult to use, feel free to reach out to me. If you find any bugs are if you face any problems with the tutorials, feel free to file a link:https://github.com/prateekjadhwani/svg2css/issues/new[bug].
