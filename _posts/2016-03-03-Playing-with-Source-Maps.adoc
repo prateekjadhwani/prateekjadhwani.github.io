@@ -1,0 +1,46 @@
+= Playing with Source Maps
+:hp-tags: sourcemaps, minification
+
+So recently, I came across the word **eval-source-map** in a retweet by someone I follow. At first I had no idea what that word meant. Looking into the functionality of that parameter I came across the concept of Source Map.
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/sourcemap.png[tweet, align="center"]
+
+After doing some research, I realized that Source Map is actually a pretty cool concept.
+
+
+== What is Source Map ?
+
+Let's say you have a single compressed file in your web application that is live and you are just browsing through the functionalities of a module. Suddenly it stops working. Bug!!!! You just found a  bug in your live website. You open the dev tools and try to find out where that bug occurred. But the code is compressed. You have no idea what variable or function name the error message in dev tools is pointing to. Wouldn't it be great if you could do that. As in view the original files despite using the compressed code.
+
+Apparently, Source Map can help you with that. Source Map, as the name indicates can map the source code of the compressed file for you. It places a link to a map file that contains link to all the files that were compressed. This link to the map file can then be picked up by the browser to display you the source code instead of the unreadable minimized file. This way, even if the error happened in the compressed file, the variable or function name will be mapped to the source file and can be used to deal with the actual problem.
+
+== How can I have the source map in my code ?
+
+Actually, it is pretty simple. When you are compressing the files, you will need to provide the parameter to create source map. Let's say you are using Closure for compressing the files. You just need to compress the files with an extra parameter `--create_source_map file-name-for-source-map` as given in the example below.
+
+[source,shell]
+--------------
+$ java -jar compiler.jar --js example.js --create_source_map ./example-map --js_output_file example-compiled.js
+--------------
+
+This will add the compiled file `xample-compiled.js` and the map file `example-map`  to your folder. Now you can add the following statement at the end of your `example-compiled.js`  file.
+
+[source,javascript]
+--------------
+//# sourceMappingURL=example-map
+--------------
+
+And that's it. You just added source maps to your file.
+
+== Okay, so how do I test it ?
+
+Make sure your server is running and you are viewing your application on a browser. Also verify that you have the source map comment in your compressed file, the one that we added in the previous section.
+Open Chrome Dev tools and see if you have Source maps enabled.
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/sourcemap2.png[option, align="center"]
+
+Now refresh the page and verify the files in the source tab of the Dev Tools. You should be able to see the un-compressed individual js files.
+
+== Conclusion
+
+I hope this explanation of Source Map was useful. I can already see so many applications of this concept in mind right now. I am sure that similar thing can be done with CSS as well. If you have anything to share about the concept of Source Map, I would love to hear it in the comments below.
