@@ -1,7 +1,7 @@
 = Playing with Source Maps
 :hp-tags: sourcemaps, minification
 
-So recently, I came across the word **eval-source-map** in a retweet by someone I follow. At first I had no idea what that word meant. Looking into the functionality of that parameter I came across the concept of Source Map.
+So recently, I came across the word **eval-source-map** in a retweet by someone I follow. At first I had no idea what that word meant. Looking into the functionality of that parameter I came across the concept of Source Map. 
 
 image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/sourcemap.png[tweet, align="center"]
 
