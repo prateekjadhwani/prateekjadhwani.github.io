@@ -1,7 +1,7 @@
 = Creating Complex CSS3 Animations
 :hp-tags: CSS3, svg2css, animation
 
-Recently, I wanted to create a css3 demo to show flickering of light and after trying it for a couple of times, I was able to build something recognizable. To be honest, it was crap.
+Recently, I wanted to create a css3 demo to show flickering of light and after trying it for a couple of times, I was able to build something recognizable. To be honest, it was crap. 
 
 
 == Problem Statement
