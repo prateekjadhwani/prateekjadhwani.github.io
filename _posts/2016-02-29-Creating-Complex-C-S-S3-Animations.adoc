@@ -6,7 +6,7 @@ Recently, I wanted to create a css3 demo to show flickering of light and after t
 
 == Problem Statement
 
-Thinking about keyframes and writing down the values of every keyframe is not something human mind can do. This is just too complex. Just imagine, how would you write css keyframes for an animation if you need to manipulated 3-4 properties for a div. Not possible at all, right? In order to achieve this, I had to go with something that doesn't involve human computation at all. Something that can be computed by a computer. Yup, you are right, I am talking about JavaScript.
+Thinking about keyframes and writing down the values of every keyframe is not something human mind can do. This is just too complex. Just imagine, how would you write css keyframes for an animation if you need to manipulate 3-4 properties for a div. Not possible at all, right? In order to achieve this, I had to go with something that doesn't involve human computation at all. Something that can be computed by a computer. Yup, you are right, I am talking about JavaScript.
 
 === Temporary Solution
 
