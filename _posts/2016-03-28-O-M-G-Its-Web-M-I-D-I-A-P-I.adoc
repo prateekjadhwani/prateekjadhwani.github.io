@@ -1,7 +1,7 @@
 = OMG!!! It's WebMIDI API!!!
 :hp-tags: WebMIDI API, POC, polymerjs
 
-I am not even sure where to start, but new web apis like link:https://www.w3.org/TR/webmidi/[WebMidi] is what help me kill time. In this experiment, I am glad I didn't have to buy a new hardware. (Yup, you have no idea how many Firefox OS devices I have at my apartment. Some bricked, some still alive, and one daily driver) Anyways, I wanted to test how the WebMIDI api works, and thankfully, I had a Midi Fighter 3d at my disposal, that I bought long time ago (dont even ask why).
+I am not even sure where to start, but new Web APIs like link:https://www.w3.org/TR/webmidi/[WebMidi] is what helps me kill time. In this experiment, I am glad I didn't have to buy a new hardware. (Yup, you have no idea how many Firefox OS devices I have in my apartment. Some bricked, some still alive, and one daily driver). Anyways, I wanted to test how the WebMIDI api works, and thankfully, I had a Midi Fighter 3d at my disposal, that I bought long time ago (dont even ask why).
 
 This experiment involves creating a WebMidi Polymer JS element that can be used directly by any web app. The link to the github project is link:https://github.com/prateekjadhwani/web-midi[this]. Or you can directly install it via bower using the following command:
 
@@ -9,12 +9,12 @@ This experiment involves creating a WebMidi Polymer JS element that can be used 
 bower install --save web-midi
 ```
 
-I also tried to build another element called link:https://github.com/prateekjadhwani/midi-fighter-3d[midi-fighter-3d]. It is not complete yet, I am still experimenting on it. But here is the working video of WebMIDI api in the demo file of midi-fighter-3d element that uses web-midi element.
+I am also working on another element called link:https://github.com/prateekjadhwani/midi-fighter-3d[midi-fighter-3d]. It is not complete yet, I am still experimenting with it. But here is the working video of WebMIDI api in the demo file of midi-fighter-3d element that uses web-midi element.
 
 +++
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tAAPqAW3tT4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tAAPqAW3tT4?rel=0" frameborder="0" allowfullscreen></iframe>
 +++
 
-I personally believe that this api definitely holds a good future especially if we combine it with link:https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API[Web Audio api].
+I personally believe that this api definitely holds a good future; especially if we combine it with link:https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API[Web Audio api].
 
-FYI : Incase you are thinking of testing out the link:https://github.com/prateekjadhwani/midi-fighter-3d[midi-fighter-3d] polymer element, I havent tested it on Firefox. I only tested it out in Canary.
+FYI : In case you are thinking of testing out the link:https://github.com/prateekjadhwani/midi-fighter-3d[midi-fighter-3d] element, I havent tested it on Firefox (I dont think it has been implemented in Nightly yet, I could be wrong). I only tested it out in Canary.
