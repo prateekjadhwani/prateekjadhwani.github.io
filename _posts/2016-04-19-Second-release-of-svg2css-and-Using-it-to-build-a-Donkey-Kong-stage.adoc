@@ -1,0 +1,28 @@
+= Second release of #svg2css and Using it to build a Donkey Kong stage
+:hp-tags: svg2css, css3, donkey-kong, css3-demo, animation
+
+== Wait, What is svg2css?
+
+Few weeks ago I created a project called link:https://prateekjadhwani.github.io/svg2css/[#svg2css]. What it does is that it lets a user create complex css3 animations with simple SVG path knowledge. A user needs to provide the web-app with SVG path info and in return it will generate a keyframe for the user. This is pretty helpful when it comes to complex css3 animations because human minds  cannot create these complex keyframe information without hours and hours of manual computation. To know more about it, feel free to checkout out link:https://prateekjadhwani.github.io/2016/02/29/Creating-Complex-C-S-S3-Animations.html[this blog about #svg2css].
+
+== You've piquid my interest, Sir. Where is this #svg2css Web App?
+
+You can visit the webapp on the site link:https://prateekjadhwani.github.io/svg2css/[https://prateekjadhwani.github.io/svg2css/]. It is an open source project built using link:https://www.polymer-project.org/1.0/[PolymerJS]. You can find the source code of #svg2css on link:https://github.com/prateekjadhwani/svg2css[Github]
+
+== Woah!! But whats up with the 2nd version?
+
+The first version of the app could help a user create a new project, build complex css3 animations and save it to link:https://gist.github.com/[gist]. After all that is why this project was built initially. But when people decided to build something cool and were not able to show the output to other people without pasting the files to codepen or jsfiddle, it was time to get rid of this extra step.
+
+The second version of #svg2css lets the user save the SVG information which was created during the project as well as lets the user load a project from gist directly into #svg2css with the help of a simple link. Now users can simply pass around their project link and open it in a browser to open the project. Please refer link:https://github.com/prateekjadhwani/svg2css/blob/master/TUTORIAL.md#sharing-a-project[this tutorial] link in order to understand how to generate the sharable link.
+
+== So wait, does that mean that you actually created a Donkey Kong stage demo using #svg2css ?
+
+Oh hell yeah!!! This is a screenshot of the donkey kong stage project. The animation is applied to the drum that moves from the top to bottom. and left to right.
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/donkeykong-demo.gif[demo-donkeykong, align="center"]
+
+But if you want to see a working demo, you can go to link:https://prateekjadhwani.github.io/svg2css/#a8dec9040aa6d5c973470b21ce1254bb[this link]. Feel free to fork the project and or see the generated source code from the webapp on link:https://gist.github.com/prateekjadhwani/a8dec9040aa6d5c973470b21ce1254bb[this gist]
+
+== Interesting!! Do you have anything planned for the future releases?
+
+Yes, I do have a bunch of ideas that I would like to implement in the future releases. I usually keep a track of these things under the link:https://github.com/prateekjadhwani/svg2css/issues[issues] section of this project. If you have any ideas that could help improve this web app or if you find any bug, feel free to file them link:https://github.com/prateekjadhwani/svg2css/issues[here].
