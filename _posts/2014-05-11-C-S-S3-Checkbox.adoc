@@ -1,0 +1,11 @@
+= CSS3 Checkbox
+:hp-tags: CSS3, checkbox, demo
+:published_at: 2014-05-11
+
+A simple checkbox (okay, not so simple!!) made using css3. The inspiration came from this link:https://dribbble.com/shots/580766-expswitch[Dribbble Post].
+
+
+++++
+<p data-height="168" data-theme-id="3991" data-slug-hash="lcvHi" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" class="codepen">See the Pen <a href="http://codepen.io/prateekjadhwani/pen/lcvHi/">expswitch</a> by Prateek Jadhwani (<a href="http://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
