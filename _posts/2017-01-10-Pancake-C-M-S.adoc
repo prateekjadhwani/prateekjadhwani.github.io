@@ -1,0 +1,12 @@
+= Pancake CMS
+== A new approach to CMS using web components and server less architecture
+
+Most of the content management systems that I have worked with so far, are slow AF. Not to mention that the ones that corporations use are painful for the developers. When I say painful, it means that the developer literally feels like committing suicide. The initial setup takes tonnes of time, then debugging environment issues, providing fast computers to developers etc. are some of the common problems that most companies spend a lot of time and money on. Its not worth it. Hence the Pancake CMS
+
+For the past 1 year I have been working on an open source project called the Pancake-CMS. It is a content management system which uses web-component libraries like Polymer for the UI and firebase in the back-end. Just create a firebase account, add users, fork the github repo, update the auth keys and voila, you are good to go. Its that simple. The users can add other polymer elements / components dynamically, build templates that can be used to build pages and have various dialects and their associated content. Simple, right?
+
+So, is it complete yet? No, not yet. There is a lot of work left in it. I wanted to create a fork and play type of software where the initial enterprise setup takes less than 10 minutes for every project/website/webapp. And 1 minute setup for developers. With that said, I have been using cloud9 as a developer environment, and it takes even less than a minute to start development. 90% of the time it takes is to install packages via bower. Thats it!!
+
+And why am I writing an article about a project that is still under development? Its simple, I havent written anything on my blog for a long time. Friends have been asking me if the site is dead. So yeah, I have been busy with work, videogames, and this project. And I wanted to bring some attention to this project. Just wanted to see if there are other people who are working on a similar approach or are willing to contribute to this project.
+
+By the way, here are some cool screenshots of the current working project. If you want you can fork the repo https://github.com/Pancake-CMS/developer-console and run it on your local, but my approach would be to run it on cloud 9. Its easy, and fast there plus you can simply delete the workspace if you dont like the project.
