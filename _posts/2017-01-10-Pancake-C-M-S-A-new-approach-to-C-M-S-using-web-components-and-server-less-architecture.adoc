@@ -1,0 +1,62 @@
+= Pancake CMS - A new approach to CMS using web components and server less architecture
+
+:hp-tags: cms, polymer, webcomponents, components
+
+Most of the content management systems that I have worked with so far, are slow AF. Not to mention that the ones that corporations use are painful for the developers. When I say painful, it means that the developer literally feels like committing suicide. The initial setup takes tonnes of time, then debugging environment issues, providing fast computers to developers etc. are some of the common problems that most companies spend a lot of time and money on. Its not worth it. Hence the link:https://github.com/Pancake-CMS[Pancake CMS].
+
+For the past one year I have been working on an open source project called the link:https://github.com/Pancake-CMS[Pancake-CMS]. It is a content management system which uses web-component libraries like link:https://www.polymer-project.org/1.0/[Polymer] for the UI and link:https://firebase.google.com/[Firebase] in the back-end. Just create a firebase account, add users, fork the github repo, update the auth keys and voila, you are good to go. Its that simple. The users can add other polymer elements / components dynamically, build templates that can be used to build pages and have various dialects and their associated content. Simple, right?
+
+So, is it complete yet? No, not yet. There is a lot of work left in it. I wanted to create a "fork and play" type of software where the initial enterprise setup takes less than 10 minutes for every project/website/webapp. And 1 minute setup for developers. With that said, I have been using link:https://c9.io/[Cloud 9] as a developer environment, and it takes even less than a minute to start development. 90% of the time it takes is to install packages via link:https://bower.io/[Bower]. Thats it!!
+
+And why am I writing an article about a project that is still under development? Its simple, I haven't written anything on my blog for a long time. Friends have been asking me if the site is dead. The answer is, not yet, I have been busy with work, videogames, and this project. And I wanted to bring some attention to this project. Just wanted to see if there are other people who are working on a similar approach or are willing to contribute to this project.
+
+By the way, here are some cool screenshots of the current working project. If you want you can fork the repo link:https://github.com/Pancake-CMS/developer-console[developer-console] and run it on your local, but my approach would be to run it on link:https://c9.io/[Cloud 9]. Its easy, and fast there plus you can simply delete the workspace if you dont like the project.
+
+====== Login Screen
+
+Users can login using their Github or Google account.
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290576/84cbb858-c48d-11e6-9d4f-9c26ecb0143a.png[login, align="center"]
+
+
+
+====== Components Page
+
+This shows the list of developer components. Selecting them will show the readme file associated with the element / component. The green border on the component name shows that the component has been installed via bower. Orange border shows that installation is pending.
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290591/6ded66f8-c48e-11e6-9a5b-0a7cc7163b70.png[component page, align="center"]
+
+A new component can be added by clicking on the plus icon and adding the component details.
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290596/9f869d88-c48e-11e6-8759-99405bd8b94a.png[addcomponent, align="center"]
+
+A developer can install the project components by clicking on the download button.
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290603/e39f77ce-c48e-11e6-9ac1-fbf062c32681.png[downloadcomponent, align="center"]
+
+====== Templates page
+
+New template section comes with an empty drag and drop container with all the added components.
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290607/fcfd4a34-c48e-11e6-9213-c107324fd396.png[newtemplate, align="center"]
+
+This will auto save the template.
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290609/3730e378-c48f-11e6-9a7d-f20c09460fa1.png[savetemplate, align="center"]
+
+Once you drag and drop the components in a template, this is what it looks like. Components can be copied/modified by a toolbar at the top right corner of every component.
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290612/689dd29a-c48f-11e6-8154-ab66bbeca408.png[draganddroptemplate, align="center"]
+
+It also uses css grid for further layout enhancement
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290614/7dd238c2-c48f-11e6-8e33-1883613ca02a.png[layouttemplate, align="center"]
+
+And css-grid is awesome!!!
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290618/b39ee450-c48f-11e6-9d27-234ac1d45fe1.png[layout2template, align="center"]
+
+====== Localization Page (under development)
+
+image::https://cloud.githubusercontent.com/assets/2219900/21290623/d864ab58-c48f-11e6-8627-3f16a68666d0.png[localization, align="center"]
+
