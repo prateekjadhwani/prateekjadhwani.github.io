@@ -1,0 +1,44 @@
+= Pancake-CMS Improvements - Week 2
+:hp-tags: cms, polymer, webcomponents, components
+
+Last week I posted a link:https://prateekjadhwani.github.io/2017/01/10/Pancake-C-M-S-A-new-approach-to-C-M-S-using-web-components-and-server-less-architecture.html[blog about my current side project - Pancake CMS]. And because of the long weekend, I was able to finish off substantial amount of work on the project. The updates involved creating a bunch of new elements and some bug fixes. Here are the details.
+
+==== Adding <template-manager> and <page-manager> 
+
+What these elements do is that thay provide a list of *templates* and *pages* that have been already created by the user. Then, the authors or content creators can fork a template or a page into a new page using the options provided in this list.
+
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/templates.png[template, align="center"]
+
+Also, if there are no templates available, the user can create a new template by clicking on the *plus icon*. A bunch of other routing relating operations were added as well to support this feature.
+
+
+==== Adding support for email login a.k.a <authentication-with-email> element
+
+Even though this is an open source project, and I was anticipating most of the developers to be using either github or google for logging, it seems, some enterprises or companies might need email login for their project. So, The project now supports login via email and password. The enterprises will need to set up users in firebase for this.
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/login.png[login, align="center"]
+
+==== <page-editor> element
+
+Previously, I was stuck at an architecture related problem and was trying to figure out the tradeoff with 3 different approaches. This weekend I finally applied a solution and the <page-editor> finally shows up a page in which user can edit content. I am using *tinyMCE* for now. I am not sure if this will be replaced by some other editor. 
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/page-editor.png[login, align="center"]
+
+==== Lots of bug fixes
+
+As with any software, there are many bugs and they need to be fixed. So, yeah, I ended up fixing a bunch of bugs as well. Some were UI bugs which were messing up the look and feel; some were blockers which had to be fixed in order to move forward.
+
+==== Separation of User Component functionality of Pancake Component functionality
+
+I ended up creating two behaviors which enhance the user components so that they can user properties and multi-lingual content in them. Earlier, some of this functionality was inside the Panckake's components. Moving them out increased the performance, fixed some bugs and made it optional for inclusion by the user.
+
+=== Conclusion
+
+In all, it was a fun weekend. I would say, the project is now 70% complete. Some of the future tasks would be as follows
+
+* Adding content workflow, where it would follow a proper cycle of creation and approvals.
+* Adding versioning system where the content of the whole site can be stored with a proper version number.
+* Creation of a <pancake-player> element which will target the release version of the site and will work as a single page app with every thing minimised or in terms of polymer - vulcanised. It would work more like a release version of the site which companies could deploy on to the web servers.
+
+I am still not setting any deadline to the project, but for now I will keep on working it. If you are interested, feel free to look into the repo link:https://github.com/Pancake-CMS/developer-console[developer-console].
