@@ -1,0 +1,25 @@
+= Pancake-CMS Improvements - Week2 Blog
+
+Last week I posted a link:https://prateekjadhwani.github.io/2017/01/10/Pancake-C-M-S-A-new-approach-to-C-M-S-using-web-components-and-server-less-architecture.html[blog about my current side project - Pancake CMS]. And because of the long weekend, I was able to finish off substantial amount of work on the project. The updates involved creating a bunch of new elements and some bug fixes. Here are the details.
+
+#### Adding <template-manager> and <page-manager> 
+
+What these elements do is that thay provide a list of *templates* and *pages* that have been already created by the user. Then, the authors or content creators can fork a template or a page into a new page using the options provided in this list.
+
+Also, if there are no templates available, the user can create a new template by clicking on the *plus icon*. A bunch of other routing relating operations were added as well to support the whole idea.
+
+#### Adding support for email login
+
+Even though this is an open source project, and I was anticipating most of the devs to be using either github or google for logging, it seems, some enterprises might need email login for their project. So, The project will now support login via email password. The enterprises will need to set up users in firebase for this.
+
+#### Page Editor
+
+Previously, I was stuck at an architecture related problem and was trying to figure out the tradeoff with 3 different approaches. This weekend I finally applied a solution and the page-editor finally shows up a page in which user can edit content. I still need to implement the attribute change thingy, where user can edit the attributes of a  content node directly. The example for that would be chnaging the src of an image. But I think that would be for later. 
+
+#### Tonnes of bug fixes
+
+As with any software, there are many bugs and they need to be fixed. So, yeah, I ended up fixing a bunch of bugs as well. Some were UI bugs which were ruining the look and feel; some were blockers which had to be fixed in order to move forward. 
+
+#### Separation of User Component functionality of Pancake Component functionality
+
+I ended up creating two behaviours which enhance the user components so thtat they can user properties and multi-lingual content in them. Earlier, some of this functionality was inside the Panckake software components. Moving them out increased the performance, fixed some bugs and made it optional for inclusion by the user.
