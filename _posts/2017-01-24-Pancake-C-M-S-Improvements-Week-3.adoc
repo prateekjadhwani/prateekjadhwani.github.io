@@ -1,7 +1,7 @@
 = Pancake-CMS Improvements - Week 3
 :hp-tags: cms, polymer, webcomponents, components, panckake-cms
 
-This is the third continuous week that I am writing the blog on my side project "Pancake-CMS". The reason that I decided to write weekly blogs is to make myself work on this project on regular basis. Not only it makes me wanna fight my laziness to work to the project, but it also gets my thinking hat on, as in to prepare what kind of work I have to do. 
+This is the third continuous week that I am writing the blog on my side project "link:https://github.com/Pancake-CMS/developer-console[Pancake-CMS]". The reason that I decided to write weekly blogs is to make myself work on this project on regular basis. Not only it makes me wanna fight my laziness to work to the project, but it also gets my thinking hat on, as in to prepare what kind of work I have to do. 
 
 So yeah, here is the change-log for week 3 on Pancake-CMS
 
@@ -9,17 +9,29 @@ So yeah, here is the change-log for week 3 on Pancake-CMS
 
 With this feature, the users who are creating and editing the content, say like adding translations to pages, will be able to see their changes in the preview mode; as in how the page would look like in production.
 
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/preview1.png[template, align="center"]
+
+After the preview button is clicked, this is what it looks like.
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/preview2.png[template, align="center"]
+
 ==== Send content for approvals
 
 Once a user is done making changes to the page, say like, done with translating the page, he/she can send the page for approvals by clicking on the save button. Having a second pair of eyes to content is always helpful, thus, this feature would help alot in terms of content workflow. 
 
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/preview1.png[template, align="center"]
+
 ==== Addition of <approvals-page>
 
-This page acts more like a moderator's page where the moderator can approve components or page translations. I am still playing around with the idea, like adding comments or user rights management etc. Will keep you guys posted, but this is what it looks like right now.
+This page acts more like a moderator's page where the moderator can approve components or page translations. I am still playing around with the idea, like adding comments or user rights management etc. Lets see how it goes.
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/approvals-page1.png[template, align="center"]
 
 ==== <review-page> element
 
 This element lets a moderator see a translated page with content changes. Here the moderator may approve or decline the content changes. Approving the translations move the node data to pages node so that the <page-editor> element is able to see the new content changes.
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/review-page1.png[template, align="center"]
 
 == Conclusion
 
@@ -32,4 +44,4 @@ Well this weekend was a busy one. With "Gravity Rush 2" coming out,and me being 
 - *send them for approvals* and 
 - *get them approved*. 
 
-There are tonnes of improvements that can be made to the project but I still need to work on some small and basic functionalities before I can move on to those.
+There are tonnes of improvements that can be made to the project but I still need to work on some small and basic functionalities before I can move on to those. But if you are interested and would like to see how it all works, feels free to fork the project link:https://github.com/Pancake-CMS/developer-console[here].
