@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Pancake-CMS Improvements - Week 3</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//prateekjadhwani.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//prateekjadhwani.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://prateekjadhwani.github.io/2017/01/24/Pancake-C-M-S-Improvements-Week-3.html" />
+    
+    <meta property="og:site_name" content="Prateek Jadhwani" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Pancake-CMS Improvements - Week 3" />
+    <meta property="og:description" content="This is the third continuous week that I am writing the blog on my side project &quot;Pancake-CMS&quot;. The reason that I decided to write weekly blogs is to make myself work on this project on regular basis. Not only it..." />
+    <meta property="og:url" content="https://prateekjadhwani.github.io/2017/01/24/Pancake-C-M-S-Improvements-Week-3.html" />
+    <meta property="article:published_time" content="2017-01-24T05:00:00.000Z" />
+    <meta property="article:modified_time" content="2017-01-25T00:56:49.451Z" />
+    <meta property="article:tag" content="cms" />
+    <meta property="article:tag" content="polymer" />
+    <meta property="article:tag" content="webcomponents" />
+    <meta property="article:tag" content="components" />
+    <meta property="article:tag" content="panckake-cms" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Pancake-CMS Improvements - Week 3" />
+    <meta name="twitter:description" content="This is the third continuous week that I am writing the blog on my side project &quot;Pancake-CMS&quot;. The reason that I decided to write weekly blogs is to make myself work on this project on regular basis. Not only it..." />
+    <meta name="twitter:url" content="https://prateekjadhwani.github.io/2017/01/24/Pancake-C-M-S-Improvements-Week-3.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Prateek Jadhwani",
+    "author": {
+        "@type": "Person",
+        "name": "Prateek Jadhwani",
+        "image": "https://avatars.githubusercontent.com/u/2219900?v=3",
+        "url": "undefined/author/undefined",
+        "sameAs": "https://prateekjadhwani.github.io"
+    },
+    "headline": "Pancake-CMS Improvements - Week 3",
+    "url": "https://prateekjadhwani.github.io/2017/01/24/Pancake-C-M-S-Improvements-Week-3.html",
+    "datePublished": "2017-01-24T05:00:00.000Z",
+    "dateModified": "2017-01-25T00:56:49.451Z",
+    "keywords": "cms,  polymer,  webcomponents,  components,  panckake-cms",
+    "description": "This is the third continuous week that I am writing the blog on my side project &quot;Pancake-CMS&quot;. The reason that I decided to write weekly blogs is to make myself work on this project on regular basis. Not only it..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Prateek Jadhwani" href="https://prateekjadhwani.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-cms tag-polymer tag-webcomponents tag-components tag-panckake-cms">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://prateekjadhwani.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://prateekjadhwani.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-cms tag-polymer tag-webcomponents tag-components tag-panckake-cms">
+
+        <header class="post-header">
+            <h1 class="post-title">Pancake-CMS Improvements - Week 3</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2017-01-24">24 January 2017</time>  on <a href="https://prateekjadhwani.github.io/tag/cms">cms</a>, <a href="https://prateekjadhwani.github.io/tag/polymer"> polymer</a>, <a href="https://prateekjadhwani.github.io/tag/webcomponents"> webcomponents</a>, <a href="https://prateekjadhwani.github.io/tag/components"> components</a>, <a href="https://prateekjadhwani.github.io/tag/panckake-cms"> panckake-cms</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is the third continuous week that I am writing the blog on my side project "<a href="https://github.com/Pancake-CMS/developer-console">Pancake-CMS</a>". The reason that I decided to write weekly blogs is to make myself work on this project on regular basis. Not only it makes me wanna fight my laziness to work to the project, but it also gets my thinking hat on, as in to prepare what kind of work I have to do.</p>
+</div>
+<div class="paragraph">
+<p>So yeah, here is the change-log for week 3 on Pancake-CMS</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_preview_mode_to_content_editor">Preview Mode to &lt;content-editor&gt;</h4>
+<div class="paragraph">
+<p>With this feature, the users who are creating and editing the content, say like adding translations to pages, will be able to see their changes in the preview mode; as in how the page would look like in production.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/preview1.png" alt="template">
+</div>
+</div>
+<div class="paragraph">
+<p>After the preview button is clicked, this is what it looks like.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/preview2.png" alt="template">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_send_content_for_approvals">Send content for approvals</h4>
+<div class="paragraph">
+<p>Once a user is done making changes to the page, say like, done with translating the page, he/she can send the page for approvals by clicking on the save button. Having a second pair of eyes to content is always helpful, thus, this feature would help alot in terms of content workflow.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/preview1.png" alt="template">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_addition_of_approvals_page">Addition of &lt;approvals-page&gt;</h4>
+<div class="paragraph">
+<p>This page acts more like a moderator&#8217;s page where the moderator can approve components or page translations. I am still playing around with the idea, like adding comments or user rights management etc. Lets see how it goes.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/approvals-page1.png" alt="template">
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="__review_page_element">&lt;review-page&gt; element</h4>
+<div class="paragraph">
+<p>This element lets a moderator see a translated page with content changes. Here the moderator may approve or decline the content changes. Approving the translations move the node data to pages node so that the &lt;page-editor&gt; element is able to see the new content changes.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/review-page1.png" alt="template">
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Well this weekend was a busy one. With "Gravity Rush 2" coming out,and me being sick for two straight days, I wasn&#8217;t able to work alot on the project. But this week&#8217;s tasks were mostly concentrated on content-workflows and bug fixes. With this week&#8217;s work, the full cycle of a Content Management System is complete. Now, a user can</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>create individual components</strong>,</p>
+</li>
+<li>
+<p><strong>build a template</strong> out of those components,</p>
+</li>
+<li>
+<p><strong>create pages</strong> out of those templates,</p>
+</li>
+<li>
+<p><strong>update translations and content</strong> of those pages,</p>
+</li>
+<li>
+<p><strong>send them for approvals</strong> and</p>
+</li>
+<li>
+<p><strong>get them approved</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>There are tonnes of improvements that can be made to the project but I still need to work on some small and basic functionalities before I can move on to those. But if you are interested and would like to see how it all works, feels free to fork the project <a href="https://github.com/Pancake-CMS/developer-console">here</a>.</p>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars.githubusercontent.com/u/2219900?v=3)"><span class="hidden">Prateek Jadhwani's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">Prateek Jadhwani</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">United States</span>
+                    <span class="author-link icon-link"><a href="https://prateekjadhwani.github.io">https://prateekjadhwani.github.io</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Pancake-CMS%20Improvements%20-%20Week%203&amp;url=https://prateekjadhwani.github.io/2017/01/24/Pancake-C-M-S-Improvements-Week-3.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://prateekjadhwani.github.io/2017/01/24/Pancake-C-M-S-Improvements-Week-3.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://prateekjadhwani.github.io/2017/01/24/Pancake-C-M-S-Improvements-Week-3.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'prateekjadhwani'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://prateekjadhwani.github.io">Prateek Jadhwani</a> &copy; 2017</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//prateekjadhwani.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//prateekjadhwani.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-65947202-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
