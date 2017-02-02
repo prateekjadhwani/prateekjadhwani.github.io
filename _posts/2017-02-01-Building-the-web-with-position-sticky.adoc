@@ -1,0 +1,34 @@
+= Building the web with position: sticky;
+:hp-tags: css3, position sticky, sticky
+
+Last week chrome announced that it is now supporting position: sticky. To tell you the truth, I never knew about this spec. Didn't even know that it has been in firefox for a long time. 
+
+""
+Good job Firefox!!
+""
+
+But when I heard the word sticky, it reminded me of one thing. Sticky Nav!!. I have seen it being used at a lot of places. And I have myself used a library called Waypoints to achieve the same. So this was a good use case for its application.
+
+So, how to use it. Its pretty simple!! First you need to know which DOM needs to be sticky, then you need to decide at what location from the top it needs to be sticky. In my use case it was the navbar, which needs to be sticky when it reaches the top. So I added the following css to it.
+
+[source, css]
+----
+nav {
+  position: sticky;
+  top: 0;
+}
+----
+
+And that is it. Thats what it required to convert any DOM to sticky. No JavaScript, no event bindings, nothing!! Just pure css fun!!
+
+++++
+<p data-height="300" data-theme-id="3991" data-slug-hash="ZLxOdp" data-default-tab="html,result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="position: sticky" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/prateekjadhwani/pen/ZLxOdp/">position: sticky</a> by Prateek Jadhwani (<a href="http://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+There is one more example that I would like to share. This is the demo in a parallax effect is achieved with the help of position: sticky
+
+++++
+<p data-height="300" data-theme-id="3991" data-slug-hash="vgWyRR" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="Scroll Effect" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/prateekjadhwani/pen/vgWyRR/">Scroll Effect</a> by Prateek Jadhwani (<a href="http://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
