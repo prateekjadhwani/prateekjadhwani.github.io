@@ -1,0 +1,22 @@
+= CSS Rhythmic Sizing
+:hp-tags: CSS3, line-height-step
+
+There are always times when you are building a page with multiple columns and the content is a collection of headings and images just the same way as shown below or its varieties.
+
+++++
+<p data-height="300" data-theme-id="3991" data-slug-hash="WOPmgQ" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="line-step-height demo" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/WOPmgQ/">line-step-height demo</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+If you see at the bottom of the page, the text is a little bit displeasing to look at. If you are someone who like to see typography in a perfect way, that starts at the same line, and ends at the same height. 
+
+So, the question is what can be done make it look more pleasing? Well, there is a new css property for that. Its called the `line-height-step`. All you need to do is add `line-height-step` property to you container css with height more than that of the line height, and thats it
+
+This is what it looks like with `line-height-step` set to `18pt`. Notice the end of the article. They all end on the same line.
+
+++++
+<p data-height="300" data-theme-id="3991" data-slug-hash="zzebeP" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="line-step-height demo2" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/zzebeP/">line-step-height demo2</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+If you are more interesting in this css property, feel free to read about it in link:https://drafts.csswg.org/css-rhythm/[this editor's draft].
