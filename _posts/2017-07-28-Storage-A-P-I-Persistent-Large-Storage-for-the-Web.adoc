@@ -1,0 +1,53 @@
+= Storage API: Persistent Large Storage for the Web
+:hp-tags: StorageAPI, API, specification, javascript
+
+== TL;DR
+
+===== Early 1990s -Internet
+
+User downloads the site and views it on his screen. Reload the page, and resources get downloaded again
+
+===== Early 2005 - App cache
+
+User downloads the site, and saves the resources to be used again and again, until the browser looses its cache. Painful process. Needed hit and trial to make it work.
+
+===== 2010 - Local Storage
+
+User gets to save important information in text format over long periods of time. Very easy to use.
+
+===== 2016 - Service Workers
+
+User gets to save other types of resources and can control the response manually, including the type of file served. But can only save upto a max of 2GB and resources gets cleared if memory is less. Easy to implement.
+
+===== 2017 - Storage API
+
+User gets to save resources on hard disk after querying for available space without loosing them even if the space is less. Best improvement to storage ever!!
+
+== Introduction
+
+So what is Storage API, and why do we need it. Its simple. With improvement in time, the resources consumed on the web have changed drastically, both in type and size. And looses these resources when the cache clears makes user experience pretty bad. Storage API is the next step in the improvement of storing website resources on a user's computer.
+
+The Storage API lets the website developer query for the available size on the user's computer. And if it has space, with user's permission, it can store data in a persistent form, like on a hard drive.
+
+The most common scenarios where this specification can be used is for like games (to store game resources) , or a song streaming site( to store songs), or an image editor site (to store layer information). Just imagine, storing these things on a user's computer, and user being able to use them while being offline, say on a flight or with choppy network would make the user experience even better. 
+
+Now that we know what Storage API is and what it can do, lets move on to how to use it and demo. At the time of writing, the APIs worked only on firefox nightly
+
+== Demo
+
+++++
+<p data-height="544" data-theme-id="3991" data-slug-hash="qXOBKo" data-default-tab="js,result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="qXOBKo" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/qXOBKo/">qXOBKo</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+When you click on the "Check if navigator.storage API's can run on your browser" button, it checks whether the APIs can run on your system. Refer `checkAPI()` function.
+
+When you click on the "Estimate Available Space" button, it queries for the space available with the help of `navigator.storage.estimate()` API. Refer `showEstimate()` function.
+
+When you click on the "Query For User Permission" button, it checks for `persistent-storage` permission for that particular origin with the help of `navigator.permissions.query` API and the on getting a `status` of either `granted` or `prompt` shows the dialog for Storage API. Refer `queryForPermission()` function.
+
+When you click on the "Revoke User Permission" button, it revokes the permission granted by clicking in the previous button. In order to make this work, you will need to set the `dom.permissions.revoke.enable` in `about:config` URL and toggle the value to `true`. Once you have revoked the property, you will see the dialog again if you click on the previous button.
+
+== Conclusion
+
+Storage API shows the true growth of the web. In all, it holds a really good future; especially for PWAs; but it depends on project to project how it can be leveraged upto its full potential. 
