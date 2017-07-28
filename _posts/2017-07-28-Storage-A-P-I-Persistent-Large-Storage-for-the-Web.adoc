@@ -31,6 +31,23 @@ The Storage API lets the website developer query for the available size on the u
 
 The most common scenarios where this specification can be used is for like games (to store game resources) , or a song streaming site( to store songs), or an image editor site (to store layer information). Just imagine, storing these things on a user's computer, and user being able to use them while being offline, say on a flight or with choppy network would make the user experience even better. 
 
+++++
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- prateekjadhwani.github.io -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-0205505681936459"
+     data-ad-slot="3791830967"></ins>
+<br/><br/><br/>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+++++
+
+
+
+
+
 Now that we know what Storage API is and what it can do, lets move on to how to use it and demo. At the time of writing, the APIs worked only on firefox nightly
 
 == Demo
@@ -51,17 +68,3 @@ When you click on the "Revoke User Permission" button, it revokes the permission
 == Conclusion
 
 Storage API shows the true growth of the web. In all, it holds a really good future; especially for PWAs; but it depends on project to project how it can be leveraged upto its full potential. 
-
-
-
-++++
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- prateekjadhwani.github.io -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-0205505681936459"
-     data-ad-slot="3791830967"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-++++
