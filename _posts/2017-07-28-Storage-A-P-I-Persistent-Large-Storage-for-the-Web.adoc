@@ -40,6 +40,10 @@ Now that we know what Storage API is and what it can do, lets move on to how to 
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 ++++
 
+++++
+
+++++
+
 When you click on the "Check if navigator.storage API's can run on your browser" button, it checks whether the APIs can run on your system. Refer `checkAPI()` function.
 
 When you click on the "Estimate Available Space" button, it queries for the space available with the help of `navigator.storage.estimate()` API. Refer `showEstimate()` function.
