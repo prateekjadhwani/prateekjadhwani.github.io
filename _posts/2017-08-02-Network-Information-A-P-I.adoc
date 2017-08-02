@@ -1,0 +1,45 @@
+= Network Information API
+:hp-tags: network, network information api, API, specification, spec, demo
+
+With technology development in the past few decades, web apps have improved from running simply on a desktop computer to a mobile phone to an IOT device. With so many different clients, using so many different types of network, there will always be a time when a web app will need information i.e. the type of network being used or the downlink speed provided by the network provider. With this thing in mind, web browsers are now shipping with this new specification called the link:http://wicg.github.io/netinfo/[Network Information API].
+
+At the time of writing, only chrome for Android supported this spec. So, if you are on chrome for Android, you should be able to see the demo working properly. But in case you are unable to see the proper data due to an incomplete spec implementation, here is what you should be able to see.
+
+Querying for `navigator.connection.type` would return one of these values
+
+[width="35%"]
+|========
+| bluetooth
+| cellular
+| ethernet
+| mixed
+| none
+| other
+| unknown
+| wifi
+| wimax
+|========
+
+This is basically the type of networks that a user can be on.
+
+Querying for `navigator.connection.effectiveType` would return one of these values. And their meanings.
+
+[width="100%",options="header"]
+|========
+| Effective Type | Speed | Type of data downloadable
+| 2g | Very Slow | Only Text and Small Images
+| 3g | Good Speed | Can download high quality images and SD Videos
+| 4g | High Speed | Can download HD Video and large files
+| slow-2g | Very Very Slow | Only Text
+|========
+
+`effectiveType` can be used to know the user network speed.
+
+All these objects in the `navigator.connection` API might help decide web apps with the type of resources that can be downloaded in order to provide user with a better user experience. For example, a web app might be able to decide whether to serve the user with a low quality video or a high quality video, or if a news article can be displayed in terms of text or with images.
+
+So, without any further delay, here is the demo.
+
+++++
+<p data-height="300" data-theme-id="3991" data-slug-hash="gxrwNb" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="Network Information API" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/gxrwNb/">Network Information API</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
