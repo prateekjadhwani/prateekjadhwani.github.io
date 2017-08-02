@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Network Information API</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="//prateekjadhwani.github.io/themes/Casper/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//prateekjadhwani.github.io/themes/Casper/assets/css/screen.css?v=1.0.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://prateekjadhwani.github.io/2017/08/02/Network-Information-A-P-I.html" />
+    
+    <meta property="og:site_name" content="Prateek Jadhwani" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Network Information API" />
+    <meta property="og:description" content="With technology development in the past few decades, web apps have improved from running simply on a desktop computer to a mobile phone to an IOT device. With so many different clients, using so many different types of network, there..." />
+    <meta property="og:url" content="https://prateekjadhwani.github.io/2017/08/02/Network-Information-A-P-I.html" />
+    <meta property="article:published_time" content="2017-08-02T04:00:00.000Z" />
+    <meta property="article:modified_time" content="2017-08-02T13:19:57.212Z" />
+    <meta property="article:tag" content="network" />
+    <meta property="article:tag" content="network information api" />
+    <meta property="article:tag" content="API" />
+    <meta property="article:tag" content="specification" />
+    <meta property="article:tag" content="spec" />
+    <meta property="article:tag" content="demo" />
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Network Information API" />
+    <meta name="twitter:description" content="With technology development in the past few decades, web apps have improved from running simply on a desktop computer to a mobile phone to an IOT device. With so many different clients, using so many different types of network, there..." />
+    <meta name="twitter:url" content="https://prateekjadhwani.github.io/2017/08/02/Network-Information-A-P-I.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Prateek Jadhwani",
+    "author": {
+        "@type": "Person",
+        "name": "Prateek Jadhwani",
+        "image": "https://avatars0.githubusercontent.com/u/2219900?v=4",
+        "url": "undefined/author/undefined",
+        "sameAs": "https://prateekjadhwani.github.io"
+    },
+    "headline": "Network Information API",
+    "url": "https://prateekjadhwani.github.io/2017/08/02/Network-Information-A-P-I.html",
+    "datePublished": "2017-08-02T04:00:00.000Z",
+    "dateModified": "2017-08-02T13:19:57.212Z",
+    "keywords": "network,  network information api,  API,  specification,  spec,  demo",
+    "description": "With technology development in the past few decades, web apps have improved from running simply on a desktop computer to a mobile phone to an IOT device. With so many different clients, using so many different types of network, there..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost ?" />
+    <link rel="alternate" type="application/rss+xml" title="Prateek Jadhwani" href="https://prateekjadhwani.github.io/rss" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+</head>
+<body class="post-template tag-network tag-network-information-api tag-A-P-I tag-specification tag-spec tag-demo">
+
+    
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="back-button icon-arrow-left" href="https://prateekjadhwani.github.io">Home</a>
+        <!-- <a class="subscribe-button icon-feed" href="https://prateekjadhwani.github.io/rss/">Subscribe</a> -->
+    </nav>
+</header>
+
+<main class="content" role="main">
+
+    <article class="post tag-network tag-network-information-api tag-A-P-I tag-specification tag-spec tag-demo">
+
+        <header class="post-header">
+            <h1 class="post-title">Network Information API</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2017-08-02">02 August 2017</time>  on <a href="https://prateekjadhwani.github.io/tag/network">network</a>, <a href="https://prateekjadhwani.github.io/tag/network-information-api"> network information api</a>, <a href="https://prateekjadhwani.github.io/tag/A-P-I"> API</a>, <a href="https://prateekjadhwani.github.io/tag/specification"> specification</a>, <a href="https://prateekjadhwani.github.io/tag/spec"> spec</a>, <a href="https://prateekjadhwani.github.io/tag/demo"> demo</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div class="paragraph">
+<p>With technology development in the past few decades, web apps have improved from running simply on a desktop computer to a mobile phone to an IOT device. With so many different clients, using so many different types of network, there will always be a time when a web app will need information i.e. the type of network being used or the downlink speed provided by the network provider. With this thing in mind, web browsers are now shipping with this new specification called the <a href="http://wicg.github.io/netinfo/">Network Information API</a>.</p>
+</div>
+<div class="paragraph">
+<p>At the time of writing, only chrome for Android supported this spec. So, if you are on chrome for Android, you should be able to see the demo working properly. But in case you are unable to see the proper data due to an incomplete spec implementation, here is what you should be able to see.</p>
+</div>
+<div class="paragraph">
+<p>Querying for <code>navigator.connection.type</code> would return one of these values</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 35%;">
+<colgroup>
+<col style="width: 100%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bluetooth</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cellular</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ethernet</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mixed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">none</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">other</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">unknown</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wifi</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wimax</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>This is basically the type of networks that a user can be on.</p>
+</div>
+<div class="paragraph">
+<p>Querying for <code>navigator.connection.effectiveType</code> would return one of these values. And their meanings.</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 33%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Effective Type</th>
+<th class="tableblock halign-left valign-top">Speed</th>
+<th class="tableblock halign-left valign-top">Type of data downloadable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2g</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Very Slow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only Text and Small Images</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3g</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Good Speed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can download high quality images and SD Videos</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4g</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High Speed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can download HD Video and large files</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">slow-2g</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Very Very Slow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only Text</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><code>effectiveType</code> can be used to know the user network speed.</p>
+</div>
+<div class="paragraph">
+<p>All these objects in the <code>navigator.connection</code> API might help decide web apps with the type of resources that can be downloaded in order to provide user with a better user experience. For example, a web app might be able to decide whether to serve the user with a low quality video or a high quality video, or if a news article can be displayed in terms of text or with images.</p>
+</div>
+<div class="paragraph">
+<p>So, without any further delay, here is the demo.</p>
+</div>
+<p data-height="300" data-theme-id="3991" data-slug-hash="gxrwNb" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="Network Information API" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/gxrwNb/">Network Information API</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="" style="background-image: url(https://avatars0.githubusercontent.com/u/2219900?v=4)"><span class="hidden">Prateek Jadhwani's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="">Prateek Jadhwani</a></h4>
+
+                    <p>Read <a href="">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">United States</span>
+                    <span class="author-link icon-link"><a href="https://prateekjadhwani.github.io">https://prateekjadhwani.github.io</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/share?text=Network%20Information%20API&amp;url=https://prateekjadhwani.github.io/2017/08/02/Network-Information-A-P-I.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://prateekjadhwani.github.io/2017/08/02/Network-Information-A-P-I.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://prateekjadhwani.github.io/2017/08/02/Network-Information-A-P-I.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'prateekjadhwani'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="https://prateekjadhwani.github.io">Prateek Jadhwani</a> &copy; 2017</section>
+        <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+    </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();      
+      </script>
+
+    <script type="text/javascript" src="//prateekjadhwani.github.io/themes/Casper/assets/js/jquery.fitvids.js?v=1.0.0"></script>
+    <script type="text/javascript" src="//prateekjadhwani.github.io/themes/Casper/assets/js/index.js?v=1.0.0"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-65947202-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
