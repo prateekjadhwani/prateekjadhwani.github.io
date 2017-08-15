@@ -1,0 +1,22 @@
+= :focus-within pseudo class
+:hp-tags: CSS3, focus, focus-within, pseudo class, demo
+
+I guess I will start with a piece of code
+
+++++
+<p data-height="279" data-theme-id="3991" data-slug-hash="eEeZjj" data-default-tab="js,result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="focusin and focusout demo in jquery" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/eEeZjj/">focusin and focusout demo in jquery</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+Here you will see in the JavaScript that you need to target the parent element of a particular element. Well, if you love writing logic in JavaScript, this might be a good solution. But thankfully, there is a new spec that lets you do the same using css. Yup, pure css. It is called the `:focus-within` pseudo class.
+
+Here is the demo of this pseudo class.
+
+++++
+<p data-height="300" data-theme-id="3991" data-slug-hash="wqPGqz" data-default-tab="css,result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title=":focus-within demo" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/wqPGqz/">:focus-within demo</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+As you can see here, there is no JavaScript used in the demo. Instead the pseudo class `:focus-within` is used on the parent class to add the property.
+
+This is relatively a new spec that exists on Chrome, Chrome Canary and Firefox Nightly at the time of writing. If you would like to read more about the spec, feel free to refer this link:https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within[link].
