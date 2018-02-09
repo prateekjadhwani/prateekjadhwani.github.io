@@ -40,7 +40,7 @@ function openModal() {
 }
 ----
 
-===3. Make close button keyboard accessible
+=== 3. Make close button keyboard accessible
 
 Your button should get triggered via Enter / Return key as well because you do need a way for the people reading on screen readers to close it.
 
