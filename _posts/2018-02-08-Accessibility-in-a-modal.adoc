@@ -1,0 +1,152 @@
+= Accessibility in a modal
+:hp-tags: accessibility, modal, html5, css3, javascript
+
+It is said that you learn a new thing every day, and so I did. Accessibility has been in the market for a very long time and even then, I did not have a chance to implement it in a modal. 
+
+But then few days ago, a new user story happened. _Make sure that the modal that shows blah blah blah information about blah blah blah thing needs to be accessible and should be read by blah blah blah screen reader._
+
+Without the accessibility features, this is what the modal looks like. Click on the button to open the modal. You should be able to notice that if you keep on pressing the `tab` key, and it will still focus the buttons behind the modal. This case is the same if you are reading it with the help of a screen reader.
+
+++++
+<p data-height="609" data-theme-id="3991" data-slug-hash="VQPxYx" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="Modal" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/VQPxYx/">Modal</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+In order to make this accessible, we will need to follow a checklist.
+
+=== 1. Tell the accessibilty devices that what you are displaying is a dialog.  
+
+This is done with the help of `role="dialog"`. For Example:
+
+[source,html]
+----
+<div class="modal-container" role="dialog" aria-label="Modal for Lorem Ipsum">
+  ...
+  ...
+</div>
+----
+
+=== 2. Focus the modal when it opens. 
+
+The modal html might be present at any section of the DOM. You do not want your users to keep on tabbing through the sections right after the button or link that opens up the modal. This is where you need to shift focus to the modal; because the screen reader needs to read the text inside the modal.
+
+[source,javascript]
+----
+function openModal() {
+    ...
+    ...
+    ...
+    document.querySelector(".modal").focus();
+}
+----
+
+===3. Make close button keyboard accessible
+
+Your button should get triggered via Enter / Return key as well because you do need a way for the people reading on screen readers to close it.
+
+If you code is not using the <button> tag and is instead using <span> tag or some other tags, you will need to make sure that it can be focussed with the help of tab keys. You can do that by adding `aria-label` and `tabindex` attributes. For Example:
+
+[source,html]
+----
+<span class="modal-close" aria-label="close" tabindex="0">X</span>
+----
+
+=== 4. Make sure that Esc key closes the modal.
+
+This is really handy when a user is going through the modal and decides to close the modal anytime without going through all the contents.
+
+Add the event listener for key presses.
+
+[source,javascript]
+----
+document.querySelector('.modal-container')
+    .addEventListener('keydown', handleESCKeyEventListener);
+----
+
+Then this handleESCKeyEventListener function would look something like this.
+
+[source,javascript]
+----
+const isOpen = document.querySelector('.modal-container')
+                  .classList.contains('-open');
+if (e.keyCode === 27 && isOpen) {
+    closeModal();
+}
+----
+
+Also, dont forget to remove this keydown event listener when you close the modal.
+
+[source,javascript]
+----
+function closeModal() {
+    ...
+    ...
+    document.querySelector('.modal-container')
+        .removeEventListener('keydown', handleESCKeyEventListener);
+}
+----
+
+=== 5. Lock the focus to just the modal
+
+When the user is inside the modal, and if he keeps on pressing tab key, the focus will eventually go out of the modal container. In order to stop the user focus to go out, we are going to use the `focusout` event handler.
+
+First we need to bind the focus out event to the modal container
+
+[source,javascript]
+----
+document.querySelector('.modal-container')
+    .addEventListener('focusout', handleFocusOut);
+----
+
+Then we need to make sure that the `relatedTarget` is outsite of the modal container to make it focus the modal again.
+
+[source,javascript]
+----
+function handleFocusOut(e) {
+  const modalDOM = document.querySelector('.modal-container');
+  const isOpen = modalDOM.classList.contains('-open');
+  if(isOpen && !modalDOM.contains(e.relatedTarget)) {
+    e.stopPropagation();
+    document.querySelector(".modal").focus();
+  }
+}
+----
+
+=== 6. Focus back to the next element
+
+In order to move the focus to the element which was selected before opening the modal, we will first need to get the last focussed element.
+
+[source,javascript]
+----
+function openModal() {
+    lastFocussedElement = document.activeElement;
+    ...
+    ...
+}
+----
+
+And now inside the close method, we can set focus back to this `lastFocussedElement` element.
+
+[source,javascript]
+----
+function closeModal() {
+    ...
+    ...
+    lastFocussedElement.focus();
+}
+----
+
+== Final Product
+
+After implementing all these points, the final demo looks something like this. Try using the tab keys or the screen reader.
+
+++++
+<p data-height="549" data-theme-id="3991" data-slug-hash="GQrdpw" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="Modal with Accessibility" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/GQrdpw/">Modal with Accessibility</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+== References
+
+[1] https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role
+
+[2] https://www.smashingmagazine.com/2014/09/making-modal-windows-better-for-everyone/
