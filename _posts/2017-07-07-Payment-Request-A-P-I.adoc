@@ -14,7 +14,7 @@ At the time of writing of this article, chrome 60 is due release, but the Paymen
 ++++
 
 
-== Explaination
+== Explanation
 
 Coming back to the explanation of what I have done in the demo, if you are familiar wiht online payment, then it will be really easy for you to understand. Every checkout process requires three things, type of payment and payment information, the total amount (with tax, discount, shipping etc) and optional information like shipping, phone number, etc. And the good thing is, the Payment request API requires these three things in the form of three different parameters as objects.
  
