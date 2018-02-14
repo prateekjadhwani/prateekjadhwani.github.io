@@ -1,0 +1,42 @@
+= <dialog> element: Modals for the future.
+:hp-tags: dialog, CSS3, focus, pseudo class, demo, backdrop
+
+
+I recently came a new spec with the name `<dialog>` element [1]. And decided to see if it works properly. This is what it looks like,
+
+++++
+<p data-height="198" data-theme-id="3991" data-slug-hash="MQEbKW" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="<dialog> element 001" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/MQEbKW/">&lt;dialog&rt; element 001</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+As you can see, it works right out of box, without any JavaScript or CSS. And.... now we can finally stop worrying performance drops and extra events that stay on the site till the end of eternity. 
+
+So, what's the catch? It is available only in chrome right now. It does not work on firefox nightly [3]. Which makes it harder to use in a site at the time of writing of this article. But if you still want to see it working, feel free to look at the demo in chrome.
+
+=== ::backdrop pseudo class
+
+As you can see it on the above demo, the background is semi opaque white colored. This can be customized with the help of `::backdrop` pseudo class. For example:
+
+++++
+<p data-height="300" data-theme-id="3991" data-slug-hash="NyabXZ" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="<dialog> element 002" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/NyabXZ/">&lt;dialog&rt; element 002</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+=== Auto focus 
+
+The `<dialog>` element also makes the first focusable element inside it auto focussed by default. See the example below.
+
+++++
+<p data-height="332" data-theme-id="3991" data-slug-hash="jZGVKE" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="<dialog> element 003" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/jZGVKE/">&lt;dialog&rt; element 003</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+== Conclusion
+
+The `<dialog>` element is one of those element that I am really excited about since css grid came out. I can see its potential in the web development world. But for now, we will have to code using the old methodologies for modals, since this element is not implemented in all the evergreen browsers yet. 
+
+== References
+
+[1] https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element
+[2] https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+[3] https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#Browser_compatibility
