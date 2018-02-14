@@ -38,5 +38,7 @@ The `<dialog>` element is one of those element that I am really excited about si
 == References
 
 [1] https://html.spec.whatwg.org/multipage/interactive-elements.html#the-dialog-element
+
 [2] https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+
 [3] https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement#Browser_compatibility
