@@ -3,22 +3,31 @@
     "username": "prateekjadhwani",
     "repositoryName": "prateekjadhwani.github.io",
     "branch": "master",
-    "delay": "500"
+    "delay": "500",
+    "cname": ""
   },
   "site": {
     "title": "Prateek Jadhwani",
-    "description": "// Frontend Developer\n// Gamer\n// !Nerd\n// Dreamer",
+    "description": "// Frontend Developer// Gamer// !Nerd// Dreamer",
     "logo": "/images/logo.png",
     "cover": "",
     "postsPerPage": "10",
     "googleAnalytics": "UA-65947202-1",
     "disqus": "prateekjadhwani",
-    "url": "https://prateekjadhwani.github.io"
+    "url": "https://prateekjadhwani.github.io",
+    "delay": "500"
   },
   "socialnetwork": {
     "twitter": "prateekjadhwani",
     "googleplus": "https://plus.google.com/u/0/+PrateekJadhwani",
-    "github": "prateekjadhwani"
+    "github": "prateekjadhwani",
+    "email": "",
+    "facebook": "",
+    "instagram": "",
+    "pinterest": "",
+    "flickr": "",
+    "linkedin": "",
+    "stackoverflow": ""
   },
   "theme": {
     "name": "casper",
