@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 01 Mar 2018 14:54:17 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[<dialog> element: Modals for the future.]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 02 Mar 2018 02:22:53 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Universal Site is the new Accessible Site]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>When we talk about an accessible website, the first thing that comes to our mind is a user who is unable to see the screen. And I am sure 99% of the people reading this agree with me. This is the same case with an accessible area. The first thing that comes to the mind when someone talks about an accessible area is wheelchair access. But this is not the case all the time. It is simply our assumption that an accessible site is limited to just its availability on screen readers and an accessible area is limited to just wheelchair access.</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s talk about the title of this blog, <em>Universal Site is the new Accessible Site</em>. A universal site, is a website that can be accessed by everyone. Not just people with a mouse or people with a screen readers, instead, it can be accessed via any hardware, any software and it can be accessed by any user, with or without disabilities, with ease.</p>
+</div>
+<div class="paragraph">
+<p>The example of wheelchair access: If an area is accessible, it simply does not mean that it can only be accessed by wheelchairs. It means that it can also be accessed by baby strollers, or catering companies or movers to move their stuff. When we think of an accessible area that can be used my everyone, it becomes a universal area.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_welcome_to_the_book_accessibility_for_everyone">Welcome to the book "Accessibility for Everyone"</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I started reading the book "Accessibility for Everyone" by "Laura Kalbag" few days ago just for fun. If you are one of those people who are trying to understand various aspects of accessibility in a website, this is your to go book. It covers all the aspects of disabilities, hardware used, how various people perceive written text, and even animations.</p>
+</div>
+<div class="paragraph">
+<p>It covers how developers and designers are misusing html tags to make things look good by giving up on accessibility features. It also talks about content break down to logical sections for better readability, management of font styles and colors, and much more. These all lessons are taken by comparing live sites of various companies, and how they perceive the term accessibility for their users.</p>
+</div>
+<div class="paragraph">
+<p>It also covers a set of solutions that are in place to take advantages of tags already available in the HTML5 specification sheet. And it discusses what a user is expecting in what scenarios and what steps can be taken to make the site more accessible in them.</p>
+</div>
+<div class="sect2">
+<h3 id="_what_it_is_not">What it is not!</h3>
+<div class="paragraph">
+<p>It is not a book that can be used for learning how to code accessible web site using HTML. It discusses a bunch of good practices, but you cannot refer them for coding examples. I personally would rather go to MDN (Mozilla Developer Network) and look at the ARIA (Accessible Rich Internet Applications) example there.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This is not a book review by any means. I was trying to look into accessibility and I found this book pretty helpful. And I decided to share the book with other people so that they can use it as well.</p>
+</div>
+<div class="paragraph">
+<p>I can already see a lot of improvements in the way I see sites. And I am making sure that I put accessibility before anything else when I write my code.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[1] Accessibility for Everyone <a href="https://abookapart.com/products/accessibility-for-everyone" class="bare">https://abookapart.com/products/accessibility-for-everyone</a></p>
+</div>
+</div>
+</div>]]></description><link>https://prateekjadhwani.github.io/2018/03/01/Universal-Site-is-the-new-Accessible-Site.html</link><guid isPermaLink="true">https://prateekjadhwani.github.io/2018/03/01/Universal-Site-is-the-new-Accessible-Site.html</guid><category><![CDATA[accessibility]]></category><category><![CDATA[book]]></category><category><![CDATA[universal]]></category><category><![CDATA[site]]></category><category><![CDATA[website]]></category><category><![CDATA[screen reader]]></category><dc:creator><![CDATA[Prateek Jadhwani]]></dc:creator><pubDate>Thu, 01 Mar 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[<dialog> element: Modals for the future.]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>I recently came across a new spec with the name <code>&lt;dialog&gt;</code> element [1]. And decided to see if it works properly. This is what it looks like,</p>
