@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 02 Mar 2018 02:22:53 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Universal Site is the new Accessible Site]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 02 Mar 2018 02:27:26 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Universal Site is the new Accessible Site]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>When we talk about an accessible website, the first thing that comes to our mind is a user who is unable to see the screen. And I am sure 99% of the people reading this agree with me. This is the same case with an accessible area. The first thing that comes to the mind when someone talks about an accessible area is wheelchair access. But this is not the case all the time. It is simply our assumption that an accessible site is limited to just its availability on screen readers and an accessible area is limited to just wheelchair access.</p>
@@ -16,6 +16,11 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>I started reading the book "Accessibility for Everyone" by "Laura Kalbag" few days ago just for fun. If you are one of those people who are trying to understand various aspects of accessibility in a website, this is your to go book. It covers all the aspects of disabilities, hardware used, how various people perceive written text, and even animations.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/accessibility_for_everyone.JPG" alt="book">
+</div>
 </div>
 <div class="paragraph">
 <p>It covers how developers and designers are misusing html tags to make things look good by giving up on accessibility features. It also talks about content break down to logical sections for better readability, management of font styles and colors, and much more. These all lessons are taken by comparing live sites of various companies, and how they perceive the term accessibility for their users.</p>
