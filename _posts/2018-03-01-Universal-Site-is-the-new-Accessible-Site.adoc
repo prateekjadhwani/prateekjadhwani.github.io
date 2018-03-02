@@ -13,6 +13,8 @@ The example of wheelchair access: If an area is accessible, it simply does not m
 
 I started reading the book "Accessibility for Everyone" by "Laura Kalbag" few days ago just for fun. If you are one of those people who are trying to understand various aspects of accessibility in a website, this is your to go book. It covers all the aspects of disabilities, hardware used, how various people perceive written text, and even animations.
 
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/accessibility_for_everyone.JPG[book, align="center"]
+
 It covers how developers and designers are misusing html tags to make things look good by giving up on accessibility features. It also talks about content break down to logical sections for better readability, management of font styles and colors, and much more. These all lessons are taken by comparing live sites of various companies, and how they perceive the term accessibility for their users.
 
 It also covers a set of solutions that are in place to take advantages of tags already available in the HTML5 specification sheet. And it discusses what a user is expecting in what scenarios and what steps can be taken to make the site more accessible in them.
