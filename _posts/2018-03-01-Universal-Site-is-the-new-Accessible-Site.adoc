@@ -1,0 +1,32 @@
+
+= Universal Site is the new Accessible Site
+:hp-tags: accessibility, book, universal, site, website, screen reader
+:hp-image: https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/accessibility_for_everyone.JPG
+
+When we talk about an accessible website, the first thing that comes to our mind is a user who is unable to see the screen. And I am sure 99% of the people reading this agree with me. This is the same case with an accessible area. The first thing that comes to the mind when someone talks about an accessible area is wheelchair access. But this is not the case all the time. It is simply our assumption that an accessible site is limited to just its availability on screen readers and an accessible area is limited to just wheelchair access.
+
+Let's talk about the title of this blog, __Universal Site is the new Accessible Site__. A universal site, is a website that can be accessed by everyone. Not just people with a mouse or people with a screen readers, instead, it can be accessed via any hardware, any software and it can be accessed by any user, with or without disabilities, with ease.
+
+The example of wheelchair access: If an area is accessible, it simply does not mean that it can only be accessed by wheelchairs. It means that it can also be accessed by baby strollers, or catering companies or movers to move their stuff. When we think of an accessible area that can be used my everyone, it becomes a universal area.
+
+== Welcome to the book "Accessibility for Everyone"
+
+I started reading the book "Accessibility for Everyone" by "Laura Kalbag" few days ago just for fun. If you are one of those people who are trying to understand various aspects of accessibility in a website, this is your to go book. It covers all the aspects of disabilities, hardware used, how various people perceive written text, and even animations.
+
+It covers how developers and designers are misusing html tags to make things look good by giving up on accessibility features. It also talks about content break down to logical sections for better readability, management of font styles and colors, and much more. These all lessons are taken by comparing live sites of various companies, and how they perceive the term accessibility for their users.
+
+It also covers a set of solutions that are in place to take advantages of tags already available in the HTML5 specification sheet. And it discusses what a user is expecting in what scenarios and what steps can be taken to make the site more accessible in them.
+
+=== What it is not!
+
+It is not a book that can be used for learning how to code accessible web site using HTML. It discusses a bunch of good practices, but you cannot refer them for coding examples. I personally would rather go to MDN (Mozilla Developer Network) and look at the ARIA (Accessible Rich Internet Applications) example there. 
+
+== Conclusion
+
+This is not a book review by any means. I was trying to look into accessibility and I found this book pretty helpful. And I decided to share the book with other people so that they can use it as well. 
+
+I can already see a lot of improvements in the way I see sites. And I am making sure that I put accessibility before anything else when I write my code.
+
+== References
+[1] Accessibility for Everyone https://abookapart.com/products/accessibility-for-everyone
+
