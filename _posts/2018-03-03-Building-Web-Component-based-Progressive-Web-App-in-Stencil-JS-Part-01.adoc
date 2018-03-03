@@ -1,4 +1,5 @@
 = Building WebComponent based Progressive WebApp in Stencil JS - Part 01
+:hp-tags: webcomponents, stencil, stenciljs, helloworld, pwa, webapp
 
 Stencil.js is a compiler for WebComponents. It lets you write Web Components in TypeScript and jsx. If you are new to Stencil.js please take a look at their site link:https://stenciljs.com/[https://stenciljs.com] for a brief introduction.
 
@@ -8,7 +9,7 @@ You can download the link:https://github.com/ionic-team/stencil-app-starter[star
 git clone https://github.com/ionic-team/stencil-app-starter my-pwa 
 ```
 
-You can then install the dependencies by using the following the command inside the `my-pwa` folder
+You can then install the dependencies by using the following command inside the `my-pwa` folder
 
 ```shell
 npm install
@@ -16,9 +17,11 @@ npm install
 
 == Hello World
 
-Let's take a look at a Hello World Example. Create a file `hello-world.tsx` inside the `my-pwa/src/components/hello-world/` folder.
+Let's take a look at a small Hello World Example to get ourselves familiar with the starter template. Create a file `hello-world.tsx` inside the `my-pwa/src/components/hello-world/` folder.
 
 ```js
+// filename: hello-world.tsx
+
 import { Component } from '@stencil/core';
 
 @Component({
@@ -34,9 +37,7 @@ export class HelloWorld {
 }
 ``` 
 
-The part `@Component` is a decorator which gives you information about the 
-
-As you can see that we are also trying to use a css file called `hello-world.css`. Let's first create this file inside the same `hello-world` folder.
+The part `@Component` is a decorator which gives you information about the html tags used and the style sheet used. As you can see that we are trying to use a css file called `hello-world.css` for this stylesheet, let's first create this file inside the same `hello-world` folder.
 
 ```css
 hello-world h1 {
@@ -44,7 +45,7 @@ hello-world h1 {
 }
 ```
 
-Now, in order to see this component on to the page, we need to use it first. Let's add the component `<hello-world>` in the `<app-home>` component.
+Now, in order to load this component on to the page, we need to use it first. Let's add the component `<hello-world>` in the `<app-home>` component.
 
 In file `app-home.tsx` inside the ` my-pwa/src/components/app-home/` folder we will simply add the `hello-world` component.
 
@@ -96,7 +97,7 @@ image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.
 
 == Upcoming in Part 02
 
-This blog just gives you a basic introduction on Stencil.js and how we can use the biolerplate template to have our own `hello-world` component in a PWA. In the next blog in this series, we will be looking at link:https://dribbble.com/shots/2359374-Mail-client-app[Mail Client App by Jakub Antalik] (refer screenshot below) and how we can create it in our demo.
+This blog just gives you a basic introduction to Stencil.js and how we can use the startup template to have our own `hello-world` webcomponent in a PWA. In the next blog in this series, we will be looking at link:https://dribbble.com/shots/2359374-Mail-client-app[Mail Client App by Jakub Antalik] (refer screenshot below) and how we can create it in our demo.
 
 image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/mail-client-app-Jakub-Antalik.png[book, align="center"]
 
