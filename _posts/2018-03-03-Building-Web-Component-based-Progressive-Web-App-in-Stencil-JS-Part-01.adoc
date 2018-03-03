@@ -1,0 +1,101 @@
+= Building WebComponent based Progressive WebApp in Stencil JS - Part 01
+
+Stencil.js is a compiler for WebComponents. It lets you write Web Components in TypeScript and jsx. If you are new to Stencil.js please take a look at their site link:https://stenciljs.com/[https://stenciljs.com] for a brief introduction.
+
+You can download the link:https://github.com/ionic-team/stencil-app-starter[starter project] by simply cloning it so that you can skip the configuration part which may take ages.
+
+```shell
+git clone https://github.com/ionic-team/stencil-app-starter my-pwa 
+```
+
+You can then install the dependencies by using the following the command inside the `my-pwa` folder
+
+```shell
+npm install
+```
+
+== Hello World
+
+Let's take a look at a Hello World Example. Create a file `hello-world.tsx` inside the `my-pwa/src/components/hello-world/` folder.
+
+```js
+import { Component } from '@stencil/core';
+
+@Component({
+    tag: 'hello-world',
+    styleUrl: 'hello-world.css'
+})
+export class HelloWorld {
+    render() {
+        return (
+            <h1>Hello World</h1>
+        );
+    }
+}
+``` 
+
+The part `@Component` is a decorator which gives you information about the 
+
+As you can see that we are also trying to use a css file called `hello-world.css`. Let's first create this file inside the same `hello-world` folder.
+
+```css
+hello-world h1 {
+    color: red;
+}
+```
+
+Now, in order to see this component on to the page, we need to use it first. Let's add the component `<hello-world>` in the `<app-home>` component.
+
+In file `app-home.tsx` inside the ` my-pwa/src/components/app-home/` folder we will simply add the `hello-world` component.
+
+Before: 
+```js
+
+ <p>
+   Welcome to the Stencil App Starter.
+   You can use this starter to build entire apps all with
+   web components using Stencil!
+   Check out our docs on 
+   <a href='https://stenciljs.com'>stenciljs.com</a> 
+   to get started.
+ </p>
+
+ <stencil-route-link url='/profile/stencil'>
+   <button>
+     Profile page
+``` 
+
+After:
+```js
+ <p>
+   Welcome to the Stencil App Starter.
+   You can use this starter to build entire apps all with
+   web components using Stencil!
+   Check out our docs on 
+   <a href='https://stenciljs.com'>stenciljs.com</a> 
+   to get started.
+ </p>
+
+ <hello-world></hello-world>
+
+ <stencil-route-link url='/profile/stencil'>
+   <button>
+     Profile page
+```
+
+Once this is done, we can now use the npm command to start the server and launch the page on to the browser with our hello world component.
+
+```shell
+npm run dev
+```
+
+The output looks like this
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/stencil-js-hello-world.JPG[book, align="center"]
+
+
+== Upcoming in Part 02
+
+This blog just gives you a basic introduction on Stencil.js and how we can use the biolerplate template to have our own `hello-world` component in a PWA. In the next blog in this series, we will be looking at link:https://dribbble.com/shots/2359374-Mail-client-app[Mail Client App by Jakub Antalik] (refer screenshot below) and how we can create it in our demo.
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/mail-client-app-Jakub-Antalik.png[book, align="center"]
