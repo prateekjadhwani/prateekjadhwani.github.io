@@ -1,4 +1,141 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 02 Mar 2018 02:27:26 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Universal Site is the new Accessible Site]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 04 Mar 2018 00:56:25 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Building WebComponent based Progressive WebApp in Stencil JS - Part 01]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Stencil.js is a compiler for WebComponents. It lets you write Web Components in TypeScript and jsx. If you are new to Stencil.js please take a look at their site <a href="https://stenciljs.com/">https://stenciljs.com</a> for a brief introduction.</p>
+</div>
+<div class="paragraph">
+<p>You can download the <a href="https://github.com/ionic-team/stencil-app-starter">starter project</a> by simply cloning it so that you can skip the configuration part which may take ages.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">git clone https://github.com/ionic-team/stencil-app-starter my-pwa</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can then install the dependencies by using the following command inside the <code>my-pwa</code> folder</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">npm install</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hello_world">Hello World</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Let&#8217;s take a look at a small Hello World Example to get ourselves familiar with the starter template. Create a file <code>hello-world.tsx</code> inside the <code>my-pwa/src/components/hello-world/</code> folder.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-js" data-lang="js">// filename: hello-world.tsx
+
+import { Component } from '@stencil/core';
+
+@Component({
+    tag: 'hello-world',
+    styleUrl: 'hello-world.css'
+})
+export class HelloWorld {
+    render() {
+        return (
+            &lt;h1&gt;Hello World&lt;/h1&gt;
+        );
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The part <code>@Component</code> is a decorator which gives you information about the html tags used and the style sheet used. As you can see that we are trying to use a css file called <code>hello-world.css</code> for this stylesheet, let&#8217;s first create this file inside the same <code>hello-world</code> folder.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">hello-world h1 {
+    color: red;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, in order to load this component on to the page, we need to use it first. Let&#8217;s add the component <code>&lt;hello-world&gt;</code> in the <code>&lt;app-home&gt;</code> component.</p>
+</div>
+<div class="paragraph">
+<p>In file <code>app-home.tsx</code> inside the ` my-pwa/src/components/app-home/` folder we will simply add the <code>hello-world</code> component.</p>
+</div>
+<div class="paragraph">
+<p>Before:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-js" data-lang="js"> &lt;p&gt;
+   Welcome to the Stencil App Starter.
+   You can use this starter to build entire apps all with
+   web components using Stencil!
+   Check out our docs on
+   &lt;a href='https://stenciljs.com'&gt;stenciljs.com&lt;/a&gt;
+   to get started.
+ &lt;/p&gt;
+
+ &lt;stencil-route-link url='/profile/stencil'&gt;
+   &lt;button&gt;
+     Profile page</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>After:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-js" data-lang="js"> &lt;p&gt;
+   Welcome to the Stencil App Starter.
+   You can use this starter to build entire apps all with
+   web components using Stencil!
+   Check out our docs on
+   &lt;a href='https://stenciljs.com'&gt;stenciljs.com&lt;/a&gt;
+   to get started.
+ &lt;/p&gt;
+
+ &lt;hello-world&gt;&lt;/hello-world&gt;
+
+ &lt;stencil-route-link url='/profile/stencil'&gt;
+   &lt;button&gt;
+     Profile page</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once this is done, we can now use the npm command to start the server and launch the page on to the browser with our hello world component.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-shell" data-lang="shell">npm run dev</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The output looks like this</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/stencil-js-hello-world.JPG" alt="book">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_upcoming_in_part_02">Upcoming in Part 02</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This blog just gives you a basic introduction to Stencil.js and how we can use the startup template to have our own <code>hello-world</code> webcomponent in a PWA. In the next blog in this series, we will be looking at <a href="https://dribbble.com/shots/2359374-Mail-client-app">Mail Client App by Jakub Antalik</a> (refer screenshot below) and how we can create it in our demo.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/mail-client-app-Jakub-Antalik.png" alt="book">
+</div>
+</div>
+<div class="paragraph">
+<p>If you want to take a look at the source code for this <code>my-pwa</code> folder, feel free to refer this link <a href="https://github.com/prateekjadhwani/my-pwa-01" class="bare">https://github.com/prateekjadhwani/my-pwa-01</a> .</p>
+</div>
+</div>
+</div>]]></description><link>https://prateekjadhwani.github.io/2018/03/03/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-01.html</link><guid isPermaLink="true">https://prateekjadhwani.github.io/2018/03/03/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-01.html</guid><category><![CDATA[webcomponents]]></category><category><![CDATA[stencil]]></category><category><![CDATA[stenciljs]]></category><category><![CDATA[helloworld]]></category><category><![CDATA[pwa]]></category><category><![CDATA[webapp]]></category><dc:creator><![CDATA[Prateek Jadhwani]]></dc:creator><pubDate>Sat, 03 Mar 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Universal Site is the new Accessible Site]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>When we talk about an accessible website, the first thing that comes to our mind is a user who is unable to see the screen. And I am sure 99% of the people reading this agree with me. This is the same case with an accessible area. The first thing that comes to the mind when someone talks about an accessible area is wheelchair access. But this is not the case all the time. It is simply our assumption that an accessible site is limited to just its availability on screen readers and an accessible area is limited to just wheelchair access.</p>
