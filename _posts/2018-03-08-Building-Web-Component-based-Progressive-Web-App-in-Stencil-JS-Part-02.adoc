@@ -1,4 +1,5 @@
 = Building WebComponent based Progressive WebApp in Stencil JS - Part 02
+:hp-tags: webcomponents, stencil, stenciljs, helloworld, pwa, webapp
 
 In link:https://prateekjadhwani.github.io/2018/03/03/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-01.html[Part 01], we looked into the hello-world example. In this part, we will be working further on the link:https://dribbble.com/shots/2359374-Mail-client-app[Mail Client].
 
