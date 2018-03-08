@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Building WebComponent based Progressive WebApp in Stencil JS - Part 02</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://prateekjadhwani.github.io/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="//prateekjadhwani.github.io/themes/casper/assets/css/screen.css?v=1520553070827" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="https://prateekjadhwani.github.io/2018/03/08/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-02.html" />
+    <meta name="referrer" content="origin" />
+    
+    <meta property="og:site_name" content="Prateek Jadhwani" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Building WebComponent based Progressive WebApp in Stencil JS - Part 02" />
+    <meta property="og:description" content="In Part 01, we looked into the hello-world example. In this part, we will be working further on the Mail Client. Observations Here are the various observations by looking at the Mail Client: We have three sections on the page.  The first section displays the folders and email labels, the" />
+    <meta property="og:url" content="https://prateekjadhwani.github.io/2018/03/08/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-02.html" />
+    <meta property="article:published_time" content="2018-03-08T00:00:00.000Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Building WebComponent based Progressive WebApp in Stencil JS - Part 02" />
+    <meta name="twitter:description" content="In Part 01, we looked into the hello-world example. In this part, we will be working further on the Mail Client. Observations Here are the various observations by looking at the Mail Client: We have three sections on the page.  The first section displays the folders and email labels, the" />
+    <meta name="twitter:url" content="https://prateekjadhwani.github.io/2018/03/08/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-02.html" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Prateek Jadhwani",
+    "author": {
+        "@type": "Person",
+        "name": "Prateek Jadhwani",
+        "image": "https://avatars0.githubusercontent.com/u/2219900?v=4",
+        "url": "https://prateekjadhwani.github.io/author/prateekjadhwani/",
+        "sameAs": "https://prateekjadhwani.github.io",
+        "description": "Creator of Pancake CMS (https://pancake-cms.github.io)\r\nWeb Components and Polymer Fan boy.\r\nFrontend Developer by day; Gamer by night."
+    },
+    "headline": "Building WebComponent based Progressive WebApp in Stencil JS - Part 02",
+    "url": "https://prateekjadhwani.github.io/2018/03/08/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-02.html",
+    "datePublished": "2018-03-08T00:00:00.000Z",
+    "description": "In Part 01, we looked into the hello-world example. In this part, we will be working further on the Mail Client. Observations Here are the various observations by looking at the Mail Client: We have three sections on the page.  The first section displays the folders and email labels, the"
+}
+    </script>
+
+    <meta name="generator" content="HubPress" />
+    <link rel="alternate" type="application/rss+xml" title="Prateek Jadhwani" href="https://prateekjadhwani.github.io/rss/" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-dark.min.css">
+    
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+</head>
+<body class="post-template nav-closed">
+
+    
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="https://prateekjadhwani.github.io"><img src="/images/logo.png" alt="Prateek Jadhwani" /></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Building WebComponent based Progressive WebApp in Stencil JS - Part 02</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2018-03-08">08 March 2018</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>In <a href="https://prateekjadhwani.github.io/2018/03/03/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-01.html">Part 01</a>, we looked into the hello-world example. In this part, we will be working further on the <a href="https://dribbble.com/shots/2359374-Mail-client-app">Mail Client</a>.</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/mail-client-app-Jakub-Antalik.png" alt="book">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_observations">Observations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here are the various observations by looking at the <a href="https://dribbble.com/shots/2359374-Mail-client-app">Mail Client</a>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>We have three sections on the page.  The first section displays the folders and email labels, the second sections displays the mails in that folder and third section displays the actual mail content.</p>
+</li>
+<li>
+<p>Each of these sections have a header. And then the content associated with it.</p>
+</li>
+<li>
+<p>There is no mobile or tablet layout, so we wont be worrying about the responsive layouts.</p>
+</li>
+<li>
+<p>To keep the demo simple, we will be using data from a json file instead of actual data for the email.</p>
+</li>
+<li>
+<p>We will be able to see emails from different people, but to keep the demo not depend on any other backend services, all the other buttons wont have any functionality associated with it.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_components">Components</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We are going to use the bottom up approach to component development. In my experience, using a bottom up approach, forces components to be reusable, which is a good thing.</p>
+</div>
+<div class="paragraph">
+<p>For the Part 02 of this series, we are going to create three components. These are as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The new mail button</p>
+</li>
+<li>
+<p>The mail information card</p>
+</li>
+<li>
+<p>Email labels</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_1_new_mail_button">1. New Mail Button</h3>
+<div class="paragraph">
+<p>In this we are simply going to create a component that acts like a button, which is green in color, and contains some text.</p>
+</div>
+<div class="paragraph">
+<p>Why is this a component? Because if you see the layout again, you will see that there is a green button with text "New Message" at the top, as well as a button with the text "Send" at the bottom. I decided to name this component as <code>green-button</code>.</p>
+</div>
+<div class="paragraph">
+<p>Just like we did with the <code>hello-world</code> component, we will create two files <code>green-button.tsx</code> and <code>green-button.css</code> and place them in the <code>/src/components/green-button</code> folder.</p>
+</div>
+<div>
+<script src="https://gist.github.com/prateekjadhwani/7e87318e4904bd9d9be430e65f0ea879.js"></script>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_mail_information_card">2. Mail Information Card</h3>
+<div class="paragraph">
+<p>The mail information card is the component which displays information about the sender, the subject, and the first line of the message.</p>
+</div>
+<div class="paragraph">
+<p>Notice that there are a bunch of Mail Information Cards in the second column and you can only select one. This behaviour resembles that of a group of radio buttons, where you can select only one radio button at a time.</p>
+</div>
+<div class="paragraph">
+<p>The Mail Information card has a label color associated with it as well. It also has a selected state which makes its background white. Keeping these things in mind, let&#8217;s create this component.</p>
+</div>
+<div class="paragraph">
+<p>We will create two files <code>mail-information-card.tsx</code> and <code>mail-information-card.css</code>. And place them in <code>/src/components/mail-information-card</code> folder.</p>
+</div>
+<div>
+<script src="https://gist.github.com/prateekjadhwani/ed7291cf9f097d27285f0b2924e9b749.js"></script>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_email_labels">3. Email Labels</h3>
+<div class="paragraph">
+<p>This component simply tells you what color represents what label. We can break it down into multiple components. One component can be the label itself called <code>email-label</code> and the other one can be the mail container where all these labels are called <code>email-labels</code>. Just like above, we are going the put the files in their respective folders.</p>
+</div>
+<div class="sect3">
+<h4 id="_email_label_the_label">email-label - the label</h4>
+<div>
+<script src="https://gist.github.com/prateekjadhwani/351fe687d1910a338cad5d488a8123f4.js"></script>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_email_labels_the_container">email-labels - the container</h4>
+<div>
+<script src="https://gist.github.com/prateekjadhwani/aa0eadd919057e20da81b7dcf950e35c.js"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>After making a bunch of changes to the <code>app-home.tsx</code> and <code>app-home.css</code> files, we can see it working on our demo. This is what it looks like with these three components:</p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/stencil-js-poc-sceenshot-01.png" alt="book">
+</div>
+</div>
+<div class="paragraph">
+<p>If you are interested the full source code of the web app, here is the link to the github project: <a href="https://github.com/prateekjadhwani/my-pwa-02" class="bare">https://github.com/prateekjadhwani/my-pwa-02</a> or you can see a working demo of this project here: <a href="https://prateekjadhwani.github.io/my-pwa-02/" class="bare">https://prateekjadhwani.github.io/my-pwa-02/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_upcoming_in_part_03">Upcoming in Part 03</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In part 03 of this series, we will try to implement the remaining components so that we can use them freely in our web app.</p>
+</div>
+</div>
+</div>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="https://prateekjadhwani.github.io/author/prateekjadhwani/" style="background-image: url(https://avatars0.githubusercontent.com/u/2219900?v&#x3D;4)"><span class="hidden">Prateek Jadhwani's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="https://prateekjadhwani.github.io/author/prateekjadhwani/">Prateek Jadhwani</a></h4>
+
+                    <p>Creator of Pancake CMS (https://pancake-cms.github.io)
+Web Components and Polymer Fan boy.
+Frontend Developer by day; Gamer by night.</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">United States</span>
+                    <span class="author-link icon-link"><a href="https://prateekjadhwani.github.io">https://prateekjadhwani.github.io</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Building%20WebComponent%20based%20Progressive%20WebApp%20in%20Stencil%20JS%20-%20Part%2002&amp;url=https://prateekjadhwani.github.io/2018/03/08/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-02.html"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://prateekjadhwani.github.io/2018/03/08/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-02.html"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=https://prateekjadhwani.github.io/2018/03/08/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-02.html"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+
+        <section class="post-comments">
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+          var disqus_shortname = 'prateekjadhwani'; // required: replace example with your forum shortname
+          /* * * DON'T EDIT BELOW THIS LINE * * */
+          (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </section>
+
+
+    </article>
+
+</main>
+
+<aside class="read-next">
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="https://prateekjadhwani.github.io">Prateek Jadhwani</a> &copy; 2018</section>
+            <section class="poweredby">Proudly published with <a href="http://hubpress.io">HubPress</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js?v="></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js?v="></script> 
+      <script type="text/javascript">
+        jQuery( document ).ready(function() {
+          // change date with ago
+          jQuery('ago.ago').each(function(){
+            var element = jQuery(this).parent();
+            element.html( moment(element.text()).fromNow());
+          });
+        });
+
+        hljs.initHighlightingOnLoad();
+      </script>
+
+    <script type="text/javascript" src="//prateekjadhwani.github.io/themes/casper/assets/js/jquery.fitvids.js?v=1520553070827"></script>
+    <script type="text/javascript" src="//prateekjadhwani.github.io/themes/casper/assets/js/index.js?v=1520553070827"></script>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-65947202-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
