@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 08 Mar 2018 23:52:51 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Building WebComponent based Progressive WebApp in Stencil JS - Part 02]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 10 Mar 2018 14:05:36 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Showing or Hiding Password]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Got bored while my PS4 was installing Monster Hunter World. And ended up making this concept <a href="https://dribbble.com/shots/4298963-Show-password">Show Password</a> by <a href="https://dribbble.com/prekesh">Prekesh</a></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dribbble_ui">Dribbble UI</h3>
+<div class="paragraph">
+<p>This is what the UI looks like.</p>
+</div>
+<div class="paragraph">
+<p>image::https://cdn.dribbble.com/users/2138/screenshots/4298963/password.gif</p>
+</div>
+<div class="paragraph">
+<p>If only, the browsers had an attribute in <code>input[type=password]</code> to show and hide passwords.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_demo">Demo</h3>
+<p data-height="420" data-theme-id="3991" data-slug-hash="QmwGmY" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="Show Password" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/QmwGmY/">Show Password</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>]]></description><link>https://prateekjadhwani.github.io/2018/03/10/Showing-or-Hiding-Password.html</link><guid isPermaLink="true">https://prateekjadhwani.github.io/2018/03/10/Showing-or-Hiding-Password.html</guid><dc:creator><![CDATA[Prateek Jadhwani]]></dc:creator><pubDate>Sat, 10 Mar 2018 00:00:00 GMT</pubDate></item><item><title><![CDATA[Building WebComponent based Progressive WebApp in Stencil JS - Part 02]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>In <a href="https://prateekjadhwani.github.io/2018/03/03/Building-Web-Component-based-Progressive-Web-App-in-Stencil-JS-Part-01.html">Part 01</a>, we looked into the hello-world example. In this part, we will be working further on the <a href="https://dribbble.com/shots/2359374-Mail-client-app">Mail Client</a>.</p>
