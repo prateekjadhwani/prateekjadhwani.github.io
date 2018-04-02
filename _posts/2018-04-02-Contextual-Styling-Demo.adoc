@@ -1,0 +1,11 @@
+= Contextual Styling Demo
+:hp-tags: CSS3, checkbox, demo, css variables, css theme, theme, data-theme
+
+After reading link:http://simurai.com/[Simurai]'s article on link:http://simurai.com/blog/2018/04/01/contextual-styling[Contextual Styling with Custom Properties], I decided to create a small demo using the same tech.
+
+++++
+<p data-height="351" data-theme-id="3991" data-slug-hash="QmxKdd" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="CSS Variable theme using data-theme" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/QmxKdd/">CSS Variable theme using data-theme</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+++++
+
+Please do not forget to review link:http://simurai.com/blog/2018/04/01/contextual-styling[Contextual Styling with Custom Properties] article incase you are interested in this tech.
