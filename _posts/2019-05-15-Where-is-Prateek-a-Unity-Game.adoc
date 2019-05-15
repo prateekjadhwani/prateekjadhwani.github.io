@@ -15,4 +15,34 @@ First and foremost news, I started learning Unity last year. And here is my firs
 
 ### 1. Recycle Recycle
 
-I created this game as a test project to see what can be done with Unity and basic / newbie Pixel art. The game is released on iOS and can be found link:https://itunes.apple.com/in/app/recycle-recycle/id1431570689?mt=8[here]
+I created this game as a test project to see what can be done with Unity and basic / newbie Pixel art. The game is released on iOS and can be found link:https://itunes.apple.com/in/app/recycle-recycle/id1431570689?mt=8[here].
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/recycle-recycle.png[screenshot, 230, 409] 
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/recycle-recycle.png[screenshot, 230, 409]
+
+
+### 2. Chopper To Hell
+
+This is another interesting unity 3d project. My aim was to create a game using the asset store with $0 budget. The game involved killing spiders while controlling a chopper. This game needs its own blog, so I will try to write a totally new blog on it in the coming days, especially about the lessons learned.
+
+The game was released on Steam and can be found  link:https://store.steampowered.com/app/1061790/Chopper_To_Hell/[here].
+
+image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/FlameThrower.png[screenshot] 
+
+## Pixel Art
+
+I have also been trying to play around with pixel art. I still have problems with Walk Cycles, but I am getting better at creating random artwork.
+
+++++
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How much would you rate it out of 10 ?<br><br>Also critique my art ¯\_(ツ)_/¯<a href="https://twitter.com/hashtag/Pixel_Dailies?src=hash&amp;ref_src=twsrc%5Etfw">#Pixel_Dailies</a> <a href="https://twitter.com/hashtag/pixelart?src=hash&amp;ref_src=twsrc%5Etfw">#pixelart</a> <a href="https://twitter.com/hashtag/%E3%83%89%E3%83%83%E3%83%88%E7%B5%B5?src=hash&amp;ref_src=twsrc%5Etfw">#ドット絵</a> <a href="https://twitter.com/hashtag/screenshotsaturday?src=hash&amp;ref_src=twsrc%5Etfw">#screenshotsaturday</a> <a href="https://twitter.com/hashtag/pixelartist?src=hash&amp;ref_src=twsrc%5Etfw">#pixelartist</a> <a href="https://twitter.com/hashtag/mood?src=hash&amp;ref_src=twsrc%5Etfw">#mood</a> <a href="https://twitter.com/hashtag/art?src=hash&amp;ref_src=twsrc%5Etfw">#art</a> <a href="https://twitter.com/hashtag/beautiful?src=hash&amp;ref_src=twsrc%5Etfw">#beautiful</a> <a href="https://twitter.com/hashtag/gameart?src=hash&amp;ref_src=twsrc%5Etfw">#gameart</a> <a href="https://twitter.com/hashtag/2d?src=hash&amp;ref_src=twsrc%5Etfw">#2d</a> <a href="https://twitter.com/hashtag/retro?src=hash&amp;ref_src=twsrc%5Etfw">#retro</a> <a href="https://twitter.com/hashtag/retroart?src=hash&amp;ref_src=twsrc%5Etfw">#retroart</a> <a href="https://t.co/8fl4VhM3OT">pic.twitter.com/8fl4VhM3OT</a></p>&mdash; Prateek Jadhwani 🎮 Chopper To Hell (@prateekjadhwani) <a href="https://twitter.com/prateekjadhwani/status/1122177892769603589?ref_src=twsrc%5Etfw">April 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+## Writing a book
+
+In the past few months, I have also been writing a book. While I am trying to learn Unity3d, I am also keeping up with learning frontend technologies and keeping up with the market. And I know, I haven't been writing blogs, but I am spending that energy on to writing a book. 
+
+I cannot say anything more about it. XD
+
+# Summary
+
+There you go guys, all the updates. I will try not to disappear again for a long time. 
