@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 02 Apr 2018 16:26:14 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Contextual Styling Demo]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 15 May 2019 12:11:09 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Where is Prateek + a Unity Game?]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>I know I have been missing in action and haven&#8217;t written anything at all in a  really long time. And I will be honest&#8230;&#8203; I gave up on the blog. In the past 10 years of me writing blogs, there have been times when I totally stop writing the blogs for a few months and then start writing again. And the last time this happened was when I moved my blog from Wordpress to Hubpress on Github.</p>
+</div>
+<div class="paragraph">
+<p>But the good news is I am back. And here are the updates.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_unity_3d">Unity 3D</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>First and foremost news, I started learning Unity last year. And here is my first attempt to this technology:</p>
+</div>
+<div class="sect2">
+<h3 id="_1_recycle_recycle">1. Recycle Recycle</h3>
+<div class="paragraph">
+<p>I created this game as a test project to see what can be done with Unity and basic / newbie Pixel art. The game is released on iOS and can be found <a href="https://itunes.apple.com/in/app/recycle-recycle/id1431570689?mt=8">here</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/recycle-recycle.png" alt="screenshot" width="230" height="409">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/recycle-recycle.png" alt="screenshot" width="230" height="409">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_chopper_to_hell">2. Chopper To Hell</h3>
+<div class="paragraph">
+<p>This is another interesting unity 3d project. My aim was to create a game using the asset store with $0 budget. The game involved killing spiders while controlling a chopper. This game needs its own blog, so I will try to write a totally new blog on it in the coming days, especially about the lessons learned.</p>
+</div>
+<div class="paragraph">
+<p>The game was released on Steam and can be found  <a href="https://store.steampowered.com/app/1061790/Chopper_To_Hell/">here</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/FlameThrower.png" alt="screenshot">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pixel_art">Pixel Art</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I have also been trying to play around with pixel art. I still have problems with Walk Cycles, but I am getting better at creating random artwork.</p>
+</div>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How much would you rate it out of 10 ?<br><br>Also critique my art ¯\_(ツ)_/¯<a href="https://twitter.com/hashtag/Pixel_Dailies?src=hash&amp;ref_src=twsrc%5Etfw">#Pixel_Dailies</a> <a href="https://twitter.com/hashtag/pixelart?src=hash&amp;ref_src=twsrc%5Etfw">#pixelart</a> <a href="https://twitter.com/hashtag/%E3%83%89%E3%83%83%E3%83%88%E7%B5%B5?src=hash&amp;ref_src=twsrc%5Etfw">#ドット絵</a> <a href="https://twitter.com/hashtag/screenshotsaturday?src=hash&amp;ref_src=twsrc%5Etfw">#screenshotsaturday</a> <a href="https://twitter.com/hashtag/pixelartist?src=hash&amp;ref_src=twsrc%5Etfw">#pixelartist</a> <a href="https://twitter.com/hashtag/mood?src=hash&amp;ref_src=twsrc%5Etfw">#mood</a> <a href="https://twitter.com/hashtag/art?src=hash&amp;ref_src=twsrc%5Etfw">#art</a> <a href="https://twitter.com/hashtag/beautiful?src=hash&amp;ref_src=twsrc%5Etfw">#beautiful</a> <a href="https://twitter.com/hashtag/gameart?src=hash&amp;ref_src=twsrc%5Etfw">#gameart</a> <a href="https://twitter.com/hashtag/2d?src=hash&amp;ref_src=twsrc%5Etfw">#2d</a> <a href="https://twitter.com/hashtag/retro?src=hash&amp;ref_src=twsrc%5Etfw">#retro</a> <a href="https://twitter.com/hashtag/retroart?src=hash&amp;ref_src=twsrc%5Etfw">#retroart</a> <a href="https://t.co/8fl4VhM3OT">pic.twitter.com/8fl4VhM3OT</a></p>&mdash; Prateek Jadhwani 🎮 Chopper To Hell (@prateekjadhwani) <a href="https://twitter.com/prateekjadhwani/status/1122177892769603589?ref_src=twsrc%5Etfw">April 27, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_writing_a_book">Writing a book</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the past few months, I have also been writing a book. While I am trying to learn Unity3d, I am also keeping up with learning frontend technologies and keeping up with the market. And I know, I haven&#8217;t been writing blogs, but I am spending that energy on to writing a book.</p>
+</div>
+<div class="paragraph">
+<p>I cannot say anything more about it. XD</p>
+</div>
+</div>
+</div>
+<h1 id="_summary" class="sect0">Summary</h1>
+<div class="paragraph">
+<p>There you go guys, all the updates. I will try not to disappear again for a long time.</p>
+</div>]]></description><link>https://prateekjadhwani.github.io/2019/05/15/Where-is-Prateek-a-Unity-Game.html</link><guid isPermaLink="true">https://prateekjadhwani.github.io/2019/05/15/Where-is-Prateek-a-Unity-Game.html</guid><category><![CDATA[Blog]]></category><dc:creator><![CDATA[Prateek Jadhwani]]></dc:creator><pubDate>Wed, 15 May 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Contextual Styling Demo]]></title><description><![CDATA[<div class="paragraph">
 <p>After reading <a href="http://simurai.com/">Simurai</a>'s article on <a href="http://simurai.com/blog/2018/04/01/contextual-styling">Contextual Styling with Custom Properties</a>, I decided to create a small demo using the same tech.</p>
 </div>
 <p data-height="351" data-theme-id="3991" data-slug-hash="QmxKdd" data-default-tab="result" data-user="prateekjadhwani" data-embed-version="2" data-pen-title="CSS Variable theme using data-theme" class="codepen">See the Pen <a href="https://codepen.io/prateekjadhwani/pen/QmxKdd/">CSS Variable theme using data-theme</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>) on <a href="https://codepen.io">CodePen</a>.</p>
