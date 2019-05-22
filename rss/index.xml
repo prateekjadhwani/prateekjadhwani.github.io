@@ -1,4 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 15 May 2019 12:11:09 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Where is Prateek + a Unity Game?]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 22 May 2019 05:19:14 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Picture In Picture API]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are a software engineer, you must have heard of the term "No code is the best code". It simply means that if you can make a feature work without any code, it is a good way of implementing a feature. In my experience, I have tried to push towards features that can be done with just CSS and html rather than using JavaScript as well. One of the most common examples of this is the use of tabs in a web page. You can achieve a tabbed layout with just css and html without any javascript events and handlers. This way you can not only create a feature that uses less code, you are also creating a feature that needs zero to very less maintenance.</p>
+</div>
+<div class="paragraph">
+<p>In this article, I would like to cover one of these no cost- low maintenance features that might be coming on to Chrome pretty soon. This feature is called Picture In Picture API.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_is_picture_in_picture_api">What is Picture in Picture API?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Picture in Picture api lets a developer create a floating video that can be placed on top of all the other content inside a web page.</p>
+</div>
+<div class="paragraph">
+<p>Try looking at the demo below</p>
+</div>
+<p class="codepen" data-height="431" data-theme-id="3991" data-default-tab="result" data-user="prateekjadhwani" data-slug-hash="arVxry" style="height: 431px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Picture In Picture API">
+  <span>See the Pen <a href="https://codepen.io/prateekjadhwani/pen/arVxry/">
+  Picture In Picture API</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<div class="paragraph">
+<p>If you click on the button "Request Picture in Picture", you will be able to see the video move from its original location to the bottom right corner of the screen.</p>
+</div>
+<div class="paragraph">
+<p>I am requesting Picture in Picture with the help of the following code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">document.querySelector('video').requestPictureInPicture();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want you can call this code on the scroll event to make something like how news site show videos on their site.</p>
+</div>
+<div class="paragraph">
+<p>One thing to keep in mind is that I did not write any extra code to achieve this feature. I simply called an api and the browser did it for me.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_but_what_if_i_need_customization">But What If I Need Customization?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are a lot of ways you can customize Picture in Picture feature.</p>
+</div>
+<div class="sect3">
+<h4 id="_feature_support">Feature Support</h4>
+<div class="paragraph">
+<p>You can check if the browser supports Picture in Picture API by using the following code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">if (!document.pictureInPictureElement) {
+  // handle errors
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_listening_for_events">Listening for events</h4>
+<div class="paragraph">
+<p>You can even listen to events triggered by the api. For example, you can listen for when the video enters Picture in Picture mode or when it leaves.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">document.querySelector('video')
+  .addEventListener('enterpictureinpicture', () =&gt; {
+    // Do stuff when video enters Picture in Picture
+  })</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>or</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">document.querySelector('video')
+  .addEventListener('leavepictureinpicture', () =&gt; {
+    // Do stuff when video leaves Picture in Picture
+  })</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_look_and_feel">Look and Feel</h4>
+<div class="paragraph">
+<p>You can also change the css associated with the video using the <code>:picture-in-picture</code> pseudo class. Although this feature is available in chrome 76 and above.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">video:picture-in-picture {
+  border: 20px solid blue;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary">Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With the above description and code samples, you should be able to see the future aspect of Picture in Picture. If you are from a software / technology company who needs to show product or article videos, this might be a better route as it saves a lot of time in coding and maintenance.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[1] Picture-in-Picture (PiP) <a href="https://chromestatus.com/feature/5729206566649856" class="bare">https://chromestatus.com/feature/5729206566649856</a></p>
+</div>
+<div class="paragraph">
+<p>[2] Picture-in-Picture <a href="https://wicg.github.io/picture-in-picture/" class="bare">https://wicg.github.io/picture-in-picture/</a></p>
+</div>
+<div class="paragraph">
+<p>[3] CSS pseudo-class ":picture-in-picture" Sample <a href="https://googlechrome.github.io/samples/picture-in-picture/css-pseudo-class" class="bare">https://googlechrome.github.io/samples/picture-in-picture/css-pseudo-class</a></p>
+</div>
+</div>
+</div>]]></description><link>https://prateekjadhwani.github.io/2019/05/22/Picture-In-Picture-API.html</link><guid isPermaLink="true">https://prateekjadhwani.github.io/2019/05/22/Picture-In-Picture-API.html</guid><category><![CDATA[javascript]]></category><category><![CDATA[css3]]></category><category><![CDATA[pictureinpicture]]></category><category><![CDATA[picture]]></category><category><![CDATA[video]]></category><category><![CDATA[api]]></category><dc:creator><![CDATA[Prateek Jadhwani]]></dc:creator><pubDate>Wed, 22 May 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Where is Prateek + a Unity Game?]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>I know I have been missing in action and haven&#8217;t written anything at all in a  really long time. And I will be honest&#8230;&#8203; I gave up on the blog. In the past 10 years of me writing blogs, there have been times when I totally stop writing the blogs for a few months and then start writing again. And the last time this happened was when I moved my blog from Wordpress to Hubpress on Github.</p>
