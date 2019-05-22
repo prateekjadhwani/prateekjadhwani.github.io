@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 22 May 2019 05:20:07 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Picture In Picture API]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 22 May 2019 05:30:16 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Picture In Picture API]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you are a software engineer, you must have heard of the term "No code is the best code". It simply means that if you can make a feature work without any code, it is a good way of implementing a feature. In my experience, I have tried to push towards features that can be done with just CSS and html rather than using JavaScript as well. One of the most common examples of this is the use of tabs in a web page. You can achieve a tabbed layout with just css and html without any javascript events and handlers. This way you can not only create a feature that uses less code, you are also creating a feature that needs zero to very less maintenance.</p>
+<p>If you are a software engineer, you must have heard of the term "No code is the best code". It simply means that if you can make a feature work without any code, it is a good way of implementing that feature. In my experience, I have tried to push towards features that can be done with just CSS and html rather than using JavaScript as well. One of the most common examples of this is the use of tabs in a web page. You can achieve a tabbed layout with just css and html without any javascript events and handlers. This way you can not only create a feature that uses less code, you are also creating a feature that needs zero to very less maintenance.</p>
 </div>
 <div class="paragraph">
-<p>In this article, I would like to cover one of these no cost- low maintenance features that might be coming on to Chrome pretty soon. This feature is called Picture In Picture API.</p>
+<p>In this article, I would like to cover one of these no cost- low maintenance features that is available on Chrome. This feature is called Picture In Picture API.</p>
 </div>
 </div>
 </div>
@@ -35,7 +35,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p>If you want you can call this code on the scroll event to make something like how news site show videos on their site.</p>
+<p>If you want you can call this code on the scroll event to make something like how news site show their floating videos.</p>
 </div>
 <div class="paragraph">
 <p>One thing to keep in mind is that I did not write any extra code to achieve this feature. I simply called an api and the browser did it for me.</p>
