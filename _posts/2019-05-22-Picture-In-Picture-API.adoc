@@ -13,7 +13,7 @@ Picture in Picture api lets a developer create a floating video that can be plac
 Try looking at the demo below
 
 ++++
-<p class="codepen" data-height="431" data-theme-id="3991" data-default-tab="result" data-user="prateekjadhwani" data-slug-hash="arVxry" style="height: 431px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Picture In Picture API">
+<p class="codepen" data-height="361" data-theme-id="3991" data-default-tab="result" data-user="prateekjadhwani" data-slug-hash="arVxry" style="height: 361px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Picture In Picture API">
   <span>See the Pen <a href="https://codepen.io/prateekjadhwani/pen/arVxry/">
   Picture In Picture API</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
