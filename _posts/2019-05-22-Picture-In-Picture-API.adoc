@@ -1,0 +1,98 @@
+= Picture In Picture API
+:hp-tags: javascript, css3, pictureinpicture, picture, video, api
+// :hp-alt-title: My English Title
+
+If you are a software engineer, you must have heard of the term "No code is the best code". It simply means that if you can make a feature work without any code, it is a good way of implementing a feature. In my experience, I have tried to push towards features that can be done with just CSS and html rather than using JavaScript as well. One of the most common examples of this is the use of tabs in a web page. You can achieve a tabbed layout with just css and html without any javascript events and handlers. This way you can not only create a feature that uses less code, you are also creating a feature that needs zero to very less maintenance.
+
+In this article, I would like to cover one of these no cost- low maintenance features that might be coming on to Chrome pretty soon. This feature is called Picture In Picture API.
+
+== What is Picture in Picture API?
+
+Picture in Picture api lets a developer create a floating video that can be placed on top of all the other content inside a web page.
+
+Try looking at the demo below
+
+++++
+<p class="codepen" data-height="431" data-theme-id="3991" data-default-tab="result" data-user="prateekjadhwani" data-slug-hash="arVxry" style="height: 431px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="Picture In Picture API">
+  <span>See the Pen <a href="https://codepen.io/prateekjadhwani/pen/arVxry/">
+  Picture In Picture API</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+++++
+
+If you click on the button "Request Picture in Picture", you will be able to see the video move from its original location to the bottom right corner of the screen.
+
+I am requesting Picture in Picture with the help of the following code:
+
+[source,javascript]
+--------------
+document.querySelector('video').requestPictureInPicture();
+--------------
+
+If you want you can call this code on the scroll event to make something like how news site show videos on their site.
+
+One thing to keep in mind is that I did not write any extra code to achieve this feature. I simply called an api and the browser did it for me.
+
+== But What If I Need Customization?
+
+There are a lot of ways you can customize Picture in Picture feature.
+
+==== Feature Support
+
+You can check if the browser supports Picture in Picture API by using the following code:
+
+[source,javascript]
+--------------
+if (!document.pictureInPictureElement) {
+  // handle errors
+}
+--------------
+
+==== Listening for events
+
+You can even listen to events triggered by the api. For example, you can listen for when the video enters Picture in Picture mode or when it leaves.
+
+[source,javascript]
+--------------
+document.querySelector('video')
+  .addEventListener('enterpictureinpicture', () => {
+    // Do stuff when video enters Picture in Picture
+  })
+--------------
+
+or
+
+[source,javascript]
+--------------
+document.querySelector('video')
+  .addEventListener('leavepictureinpicture', () => {
+    // Do stuff when video leaves Picture in Picture
+  })
+--------------
+
+==== Look and Feel
+
+You can also change the css associated with the video using the `:picture-in-picture` pseudo class. Although this feature is available in chrome 76 and above.
+
+[source,css]
+--------------
+video:picture-in-picture {
+  border: 20px solid blue;
+}
+--------------
+
+== Summary
+
+With the above description and code samples, you should be able to see the future aspect of Picture in Picture. If you are from a software / technology company who needs to show product or article videos, this might be a better route as it saves a lot of time in coding and maintenance.
+
+
+== References
+
+[1] Picture-in-Picture (PiP) https://chromestatus.com/feature/5729206566649856
+
+[2] Picture-in-Picture https://wicg.github.io/picture-in-picture/
+
+[3] CSS pseudo-class ":picture-in-picture" Sample https://googlechrome.github.io/samples/picture-in-picture/css-pseudo-class
+
+
