@@ -1,4 +1,95 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 22 May 2019 05:30:16 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Picture In Picture API]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Prateek Jadhwani]]></title><description><![CDATA[// Frontend Developer// Gamer// !Nerd// Dreamer]]></description><link>https://prateekjadhwani.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 28 May 2019 12:10:00 GMT</lastBuildDate><atom:link href="https://prateekjadhwani.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Reduced Motion Media Query to Avoid Vestibular Disorders and Seizures]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>When I was doing my research in Accessibility, I came across the term Vestibular Disorder. I really didn’t know much about it at that time. It is basically a type of disability that a person viewing the screen might have. It is often grouped with seizures and symptoms may include dizziness, vertigo, nausea, etc.</p>
+</div>
+<div class="paragraph">
+<p>In terms of browsing the web, this sort of motion sickness might be caused by weird animations, or parallax backgrounds[1], which a lot of might not like and thus causing a higher bounce rate[4].</p>
+</div>
+<div class="paragraph">
+<p>In order to provide a solution for this accessibility issue, the web specifications now include a new media query called <code>prefers-reduced-motion</code>. What it does is, it lets the browser run a specific css stated under <code>prefers-reduced-motion</code> media query[3] which can contain fixes for Reduced Motion.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_enable_reduced_motion">Enable Reduced Motion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before we even start diving into code, let’s take a look at ways we can enable <strong>Reduced Motion</strong> option on a Mac.
+<em>( Sorry windows users, I don’t have a windows machine with me. )</em></p>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
+<img src="https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/reduced-motion.gif" alt="reduced motion">
+</div>
+</div>
+<div class="paragraph">
+<p>If you are unable to view the gif above, the steps are as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Go to <strong>System Preferences</strong> &gt; <strong>Accessibility</strong> &gt; <strong>Display</strong></p>
+</li>
+<li>
+<p>Click on <strong>Reduce Motion</strong> checkbox</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>And you can disable by unchecking the same checkbox.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prefers_reduced_motion_media_query">prefers-reduced-motion media query</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can use the media query <code>prefers-reduced-motion</code> to specifically hide the contents of the page that might cause motion sickness or nausea.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-css" data-lang="css">@media (prefers-reduced-motion) {
+	// do magic here
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want, you can take a look at the demo below. If you have <strong>Reduced Motion</strong> enabled, you will see a black overlay. Or else you see a gif.</p>
+</div>
+<p class="codepen" data-height="1029" data-theme-id="3991" data-default-tab="result" data-user="prateekjadhwani" data-slug-hash="eajegp" style="height: 1029px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="prefers-reduced-motion">
+  <span>See the Pen <a href="https://codepen.io/prateekjadhwani/pen/eajegp/">
+  prefers-reduced-motion</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary">Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I hope you are now able to understand the main reason behind the implementation of this feature. And ways in which this media query can be used to provide a better user interface for you site.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references">References</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[1] Accessibility For Everyone : <a href="https://abookapart.com/products/accessibility-for-everyone" class="bare">https://abookapart.com/products/accessibility-for-everyone</a></p>
+</div>
+<div class="paragraph">
+<p>[2] CSS prefers-reduced-motion media query : <a href="https://chromestatus.com/feature/5597964353404928" class="bare">https://chromestatus.com/feature/5597964353404928</a></p>
+</div>
+<div class="paragraph">
+<p>[3] prefers-reduced-motion media feature :  <a href="https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion" class="bare">https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion</a></p>
+</div>
+<div class="paragraph">
+<p>[4] Bounce Rate <a href="https://en.wikipedia.org/wiki/Bounce_rate" class="bare">https://en.wikipedia.org/wiki/Bounce_rate</a></p>
+</div>
+</div>
+</div>]]></description><link>https://prateekjadhwani.github.io/2019/05/28/Reduced-Motion-Media-Query-to-Avoid-Vestibular-Disorders-and-Seizures.html</link><guid isPermaLink="true">https://prateekjadhwani.github.io/2019/05/28/Reduced-Motion-Media-Query-to-Avoid-Vestibular-Disorders-and-Seizures.html</guid><category><![CDATA[css3]]></category><category><![CDATA[accessibility]]></category><category><![CDATA[Reduced Motion]]></category><category><![CDATA[prefers-reduced-motion]]></category><category><![CDATA[media query]]></category><dc:creator><![CDATA[Prateek Jadhwani]]></dc:creator><pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate></item><item><title><![CDATA[Picture In Picture API]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>If you are a software engineer, you must have heard of the term "No code is the best code". It simply means that if you can make a feature work without any code, it is a good way of implementing that feature. In my experience, I have tried to push towards features that can be done with just CSS and html rather than using JavaScript as well. One of the most common examples of this is the use of tabs in a web page. You can achieve a tabbed layout with just css and html without any javascript events and handlers. This way you can not only create a feature that uses less code, you are also creating a feature that needs zero to very less maintenance.</p>
