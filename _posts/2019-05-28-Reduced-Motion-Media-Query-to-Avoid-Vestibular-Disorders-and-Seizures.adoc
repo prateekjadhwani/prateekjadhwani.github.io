@@ -11,7 +11,8 @@ In order to provide a solution for this accessibility issue, the web specificati
 
 == Enable Reduced Motion
 
-Before we even start diving into code, let’s take a look at ways we can enable “Reduced Motion” option on a Mac. Sorry windows users, I don’t have a windows machine with me :(
+Before we even start diving into code, let’s take a look at ways we can enable *Reduced Motion* option on a Mac. 
+_( Sorry windows users, I don’t have a windows machine with me. )_
 
 image::https://raw.githubusercontent.com/prateekjadhwani/prateekjadhwani.github.io/master/images/reduced-motion.gif[reduced motion, align="center"]
 
