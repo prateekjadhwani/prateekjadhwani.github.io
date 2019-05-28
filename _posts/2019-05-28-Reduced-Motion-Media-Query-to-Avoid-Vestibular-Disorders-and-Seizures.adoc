@@ -38,13 +38,54 @@ You can use the media query `prefers-reduced-motion` to specifically hide the co
 If you want, you can take a look at the demo below. If you have *Reduced Motion* enabled, you will see a black overlay. Or else you see a gif.
 
 ++++
-<p class="codepen" data-height="1029" data-theme-id="3991" data-default-tab="result" data-user="prateekjadhwani" data-slug-hash="eajegp" style="height: 1029px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="prefers-reduced-motion">
-  <span>See the Pen <a href="https://codepen.io/prateekjadhwani/pen/eajegp/">
-  prefers-reduced-motion</a> by Prateek Jadhwani (<a href="https://codepen.io/prateekjadhwani">@prateekjadhwani</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<div class="demo-message">Try Enabling or Disabling the Reduced Motion option under Accessibility</div>
+<div class="reduced-motion-container">
+  <blockquote class="imgur-embed-pub" lang="en" data-id="oPiNf7m"><a href="//imgur.com/oPiNf7m">Sex on acid</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+  <div class="reduced-motion-overlay">
+    Reduced Motion is ON, so this section is hidden.
+  </div>
+</div>
+<style>
+.demo-message {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+.reduced-motion-container {
+  margin: 0 auto;
+  width: 550px;
+  position: relative;
+}
+
+.reduced-motion-overlay {
+  display: none;
+}
+
+@media (prefers-reduced-motion) {
+  .reduced-motion-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    display: block;
+    color: white;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+</style>
 ++++
+
+Demo Link : https://codepen.io/prateekjadhwani/pen/eajegp
+
 
 == Summary
 
